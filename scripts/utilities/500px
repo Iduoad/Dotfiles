@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+
+from json import loads
+from urllib.request import urlopen, urlretrieve
+from sys import argv
+import re
+
+from bs4 import BeautifulSoup
+
+def imageFetch(px_url):
+    px_source =  urlopen(px_url)
+    soup = BeautifulSoup(px_source, 'html.parser')
+    raw_data = soup.find(string=re.compile('window.PxPreloadedData'))
+    json_data = loads(raw_data.split('= ',1)[1].rstrip()[:-1])
+
+    img_name = json_data['photo']['name']
+    img_url = json_data['photo']['images'][-1]['url']
+    img_format = json_data['photo']['images'][-1]['format']
+
+    return img_name, img_url, img_format
+
+def imageDownload(img):
+    urlretrieve(img[1], img[0]+'.'+img[2])
+
+if __name__ == '__main__' :
+    imgs = argv[1:]
+    for i in imgs:
+        im = imageFetch(i)
+        imageDownload(im)
+        print('image : ' + im[0] + ' downloaded')
