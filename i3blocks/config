@@ -1,0 +1,27 @@
+[mpd]
+label=🎶
+interval=30
+command=~/.config/i3blocks/blocks/mpdscript
+
+[memory]
+label=📈
+separator=false
+interval=1
+command=~/.config/i3blocks/blocks/memory
+color=#dfe3ee
+
+[disk]
+label=💽
+command=~/.config/i3blocks/blocks/disk /home
+interval=30
+separator=true
+
+[battery]
+label=
+interval=30
+command=~/.config/i3blocks/blocks/battery BAT0
+
+[time]
+command=date +'%a %d %b %H:%M'
+label=📅
+interval=1

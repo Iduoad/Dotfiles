@@ -5,6 +5,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'dylanaraps/wal.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'miyakogi/conoline.vim'
+Plug 'posva/vim-vue'
 call plug#end()
 """"""""""""""""""General""""""""""""""""""""""""
   syntax on
