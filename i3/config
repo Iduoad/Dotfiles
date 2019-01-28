@@ -13,7 +13,7 @@ font pango:DejaVu Sans Mono, Awesome 9
 #-General-#
 set $mod Mod1
 set $term st
-set $shfolder ~/.config/Scripts
+set $shfolder ~/.config/scripts
 
 #-Workspaces-#
 set $ws1 "1"
@@ -45,7 +45,8 @@ set $inc --no-startup-id amixer sset Master 2%+
 set $biginc --no-startup-id amixer sset Master 5%+
 set $dec --no-startup-id amixer sset Master 2%-
 set $bigdec --no-startup-id amixer sset Master 5%-
-set $mute --no-startup-id pamixer -t
+# set $mute --no-startup-id pamixer -t
+set $mute --no-startup-id "amixer -q sset Master,0 toggle"
 set $truemute --no-startup-id amixer sset Master mute
 
 # Set Xresources colors:
@@ -79,7 +80,8 @@ client.background $black
 #Music player daemon:
 exec --no-startup-id mpd
 #Add wallpaper:
-exec_always --no-startup-id wal -c && wal -i ~/.config/wall.png
+#exec_always --no-startup-id wal -c && wal -i ~/.config/wall.png
+exec_always --no-startup-id feh --bg-scale ~/.config/wall.png
 #Xkb layout
 exec_always setxkbmap -layout us,ar
 exec_always setxkbmap -option grp:win_space_toggle
@@ -113,13 +115,13 @@ bindsym $mod+Shift+a gaps inner current set 0; gaps outer current set 0
 bindsym $mod+b    exec --no-startup-id $shfolder/docs.sh
 bindsym $mod+Shift+b exec qutebrowser
 
-#bindsym $mod+c
-#bindsym $mod+Shift+c
+# bindsym $mod+c scratchpad show
+# bindsym $mod+Shift+c
 
 bindsym $mod+d			exec rofi -show run
 #bindsym $mod+Shift+d
 
-bindsym $mod+e  exec --no-startup-id $shfolder/emoji-menu.sh
+bindsym $mod+e  exec --no-startup-id $shfolder/rofi-emoji.sh
 bindsym $mod+Shift+e  exec firefox -private-window
 
 bindsym $mod+f			fullscreen toggle
@@ -146,7 +148,7 @@ bindsym $mod+Shift+l		move right 20
 bindsym $mod+m 			exec $music
 bindsym $mod+Shift+m		exec $mute
 
-bindsym $mod+n    exec --no-startup-id $shfolder/library.sh
+bindsym $mod+n    exec --no-startup-id $shfolder/library
 bindsym $mod+Shift+n exec $news
 
 bindsym $mod+o     resize grow width 15 px or 15 ppt
@@ -173,7 +175,7 @@ bindsym $mod+u          resize grow height 10 px or 10 ppt
 #bindsym $mod+v			exec --no-startup-id setxkbmap ar
 #bindsym $mod+Shift+v		exec --no-startup-id setxkbmap us
 
-bindsym $mod+w exec wal -c -i ~/Pictures/Wallpapers/nature
+#bindsym $mod+w exec wal -c -i ~/Pictures/Wallpapers/nature
 #bindsym $mod+Shift+w
 
 #bindsym $mod+x     exec --no-startup-id ~/.config/i3/lock.sh

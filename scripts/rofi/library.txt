@@ -1,0 +1,11 @@
+📑 Learnt: my learning Journey-Learnt.md
+📱 My apps: apps to try-Apps.md
+⁉️ Solved: questions and problems and answers to them-Solved.md
+🐧 Arch Install: arch Install roadmap-ArchInstal.wiki
+🔢 Calculator: a python calculator-calc
+📖 Notes: notes about talks and videos-Notes.json
+📚 Goodreads: articles and books to read-reads.md
+🎥 Reviews: movie and book reviews-Reviews.json
+❎ Todo: my todo and appts-todo
+📜 Scripts: script todo list and -Scripts.wiki
+🔗 Links: list of links by topics-Links.md

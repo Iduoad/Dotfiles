@@ -1,0 +1,20 @@
+#!/bin/zsh
+
+LIBRARY_FILE="$HOME/dotfiles/scripts/rofi/library.txt"
+LIBRARY_FOLDER="$HOME/Documents"
+
+if ps -aux | grep "[L]ibrary" > /dev/null; then
+    i3-msg 'scratchpad show'
+else
+    line=$(cat $LIBRARY_FILE | rofi -dmenu -i -p Library)
+    result=$(echo "$line" | cut -f2 -d'-')
+    echo $result
+   if [ $result = "todo" ]; then
+        i3-msg "exec st -c Library -e calcurse"
+    elif [ $result = "calc" ]; then
+        i3-msg "exec st -c Library -e python"
+    else
+        result="${LIBRARY_FOLDER}/${result}"
+        i3-msg "exec st -c Library -e vim $result"
+    fi
+fi
