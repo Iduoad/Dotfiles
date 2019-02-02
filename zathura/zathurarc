@@ -1,4 +1,4 @@
-set completion-bg "#000000"
+et completion-bg "#000000"
 set completion-fg "#c1c1c1"
 set completion-group-bg "#000000"
 set completion-group-fg "#eceee3"

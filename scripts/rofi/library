@@ -8,13 +8,15 @@ if ps -aux | grep "[L]ibrary" > /dev/null; then
 else
     line=$(cat $LIBRARY_FILE | rofi -dmenu -i -p Library)
     result=$(echo "$line" | cut -f2 -d'-')
-    echo $result
-   if [ $result = "todo" ]; then
-        i3-msg "exec st -c Library -e calcurse"
+
+    if [ $result = "todo" ]; then
+        st -c Library -e calcurse & disown
     elif [ $result = "calc" ]; then
-        i3-msg "exec st -c Library -e python"
+        st -c Library -e python -ic "from math import *; import cmath" & disown
+    elif [ -z $result ]; then
+        exit 0
     else
         result="${LIBRARY_FOLDER}/${result}"
-        i3-msg "exec st -c Library -e vim $result"
+        st -c Library -e vim $result & disown
     fi
 fi
