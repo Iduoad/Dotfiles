@@ -13,6 +13,10 @@ else
         st -c Library -e calcurse & disown
     elif [ $result = "calc" ]; then
         st -c Library -e python -ic "from math import *; import cmath" & disown
+    elif [ $result = "arch" ]; then
+        st -c Library -e ranger "/usr/share/doc/arch-wiki/html/en" & disown
+    elif [ $result = "temp" ]; then
+        st -c Library -e vim "/tmp/thinkering" & disown
     elif [ -z $result ]; then
         exit 0
     else

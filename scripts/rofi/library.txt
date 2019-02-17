@@ -9,3 +9,5 @@
 ❎ Todo: my todo and appts-todo
 📜 Scripts: script todo list and -Scripts.wiki
 🔗 Links: list of links by topics-Links.md
+🦁 Arch Wiki: Offline Arch Wiki-arch
+🕰️ Temporary: Open a Temporary file-temp

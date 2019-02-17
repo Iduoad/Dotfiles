@@ -29,6 +29,7 @@ set $ws10 "10"
 
 #-mpc-#
 set $music st -e ncmpcpp
+set $torrent st -e transmission-remote-cli
 set $news st -e newsboat
 set $pause --no-startup-id mpc toggle
 set $trupause --no-startup-id mpc pause
@@ -45,8 +46,8 @@ set $inc --no-startup-id amixer sset Master 2%+
 set $biginc --no-startup-id amixer sset Master 5%+
 set $dec --no-startup-id amixer sset Master 2%-
 set $bigdec --no-startup-id amixer sset Master 5%-
-# set $mute --no-startup-id pamixer -t
-set $mute --no-startup-id "amixer -q sset Master,0 toggle"
+set $mute --no-startup-id pamixer -t
+#set $mute --no-startup-id "amixer -q sset Master,0 toggle"
 set $truemute --no-startup-id amixer sset Master mute
 
 # Set Xresources colors:
@@ -167,13 +168,13 @@ bindsym $mod+s layout tabbed
 bindsym $mod+Shift+s layout splith
 
 bindsym $mod+t			split toggle
-#bindsym $mod+Shift+t
+bindsym $mod+Shift+t exec $torrent
 
 bindsym $mod+u          resize grow height 10 px or 10 ppt
 #bindsym $mod+Shift+u
 
 #bindsym $mod+v			exec --no-startup-id setxkbmap ar
-#bindsym $mod+Shift+v		exec --no-startup-id setxkbmap us
+bindsym $mod+Shift+v		exec --no-startup-id virtualbox
 
 #bindsym $mod+w exec wal -c -i ~/Pictures/Wallpapers/nature
 #bindsym $mod+Shift+w

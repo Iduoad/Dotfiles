@@ -27,3 +27,11 @@ def () {
         sdcv $1 | less
     fi
 }
+
+record () {
+    ffmpeg -video_size 1600x900 -framerate 25 -f x11grab -i :0 output.mp4
+}
+
+ddownload() {
+    wget "http://media.readthedocs.org/pdf/$1/latest/$1.pdf"
+}
