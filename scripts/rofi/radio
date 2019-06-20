@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+RADIO_FILE="$HOME/dotfiles/scripts/rofi/radios.txt"
+
+
+radio_name=$(cat $RADIO_FILE | sed -e "/^#/d" -e "/^$/d"| cut -f 1 -d'|' | rofi -dmenu -i -p Radios)
+[ -z $radio_name ] && exit 0
+radio_url=$(grep $radio_name $RADIO_FILE | cut -f 2 -d'|')
+
+if ps -aux | grep "[R]adio" > /dev/null; then
+    radio_pid=$(ps -aux | grep "[R]adio" | awk {'printf $2'})
+    kill $radio_pid
+fi
+
+st -c Radio -e mpv $radio_url & disown || notify-send "$radio_name is not working"

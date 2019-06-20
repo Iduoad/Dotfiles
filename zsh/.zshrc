@@ -8,7 +8,7 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="mira"
+ZSH_THEME="aussiegeek"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -76,10 +76,12 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # add scripts to PATH
-export PATH="$PATH:$HOME/.config/scripts"
+export PATH="$PATH:$HOME/.config/scripts:$HOME/.gem/ruby/2.6.0/bin:$HOME/.local/bin"
 
 # add dictionaries path
 export STARDICT_DATA_DIR="$HOME/.config/stardict/dic"
+export EDITOR='vim'
+export BROWSER='firefox'
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -101,3 +103,11 @@ export STARDICT_DATA_DIR="$HOME/.config/stardict/dic"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+(cat ~/.cache/wal/sequences &)
+
+# To add support for TTYs this line can be optionally added.
+# source ~/.cache/wal/colors-tty.sh

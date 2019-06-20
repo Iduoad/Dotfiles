@@ -1,11 +1,20 @@
 """"""""""""""""""Plugins""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
+" Syntax
+Plug 'posva/vim-vue'
 Plug 'PotatoesMaster/i3-vim-syntax'
-Plug 'vimwiki/vimwiki'
+Plug 'tomtom/tcomment_vim'
+" Plugin 'nathanaelkane/vim-indent-guides' "Add visual indicators if indent
+" Theming
 Plug 'dylanaraps/wal.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'miyakogi/conoline.vim'
-Plug 'posva/vim-vue'
+Plug 'vim-airline/vim-airline'
+" Utils
+Plug 'airblade/vim-gitgutter'
+Plug 'easymotion/vim-easymotion'
+Plug 'vimwiki/vimwiki'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 """"""""""""""""""General""""""""""""""""""""""""
   syntax on
@@ -20,6 +29,8 @@ call plug#end()
   set omnifunc=syntaxcomplete#Complete
 
   set wildmode=longest,list,full
+
+  let mapleader = ','
 
 " Display
   set title
@@ -38,7 +49,6 @@ call plug#end()
 
   set incsearch
   set hlsearch
-
 " Beeps
   set noerrorbells
 
@@ -57,11 +67,11 @@ call plug#end()
   set cm=blowfish2
 
 " Copy selected text to system clipboard (requires gvim/nvim/vim-x11 installed):
-	vnoremap <C-c> "+y
-	map <C-p> "+P
+  vnoremap <C-c> "+y
+  map <C-p> "+P
 
 " split navigations
-	set splitbelow splitright
+  set splitbelow splitright
 
   nnoremap <C-J> <C-W><C-J>
   nnoremap <C-K> <C-W><C-K>
@@ -74,14 +84,22 @@ call plug#end()
   autocmd BufWritePre * %s/\s\+$//e
 
 " Run xrdb whenever Xdefaults or Xresources are updated.
-	autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
+  autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
+
+"""""""""""""""""""Key mappings"""""""""""""
+" fold Keymaps
+  "inoremap \ <C-O>za
+  nnoremap \ za
+  onoremap \ <C-C>za
+  vnoremap \ zf
 
 """""""""""""""""""Plugins mappings"""""""""""""
   ""GOYO
-  map <leader>f :Goyo \| set linebreak<CR>
+  map <leader>g :Goyo \| set linebreak<CR>
 
   " Spell-check set to <leader>o, 'o' for 'orthography':
   map <leader>o :setlocal spell! spelllang=en_us<CR>
   " VimWiki
   let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
-
+  " EasyMotion
+  map <Space> <Plug>(easymotion-prefix)

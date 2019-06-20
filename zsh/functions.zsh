@@ -33,5 +33,33 @@ record () {
 }
 
 ddownload() {
-    wget "http://media.readthedocs.org/pdf/$1/latest/$1.pdf"
+    [ -n $1 ] && wget "http://media.readthedocs.org/pdf/$1/latest/$1.pdf"
+}
+
+generate_structure(){
+    if [ -n $1 ]; then
+        mkdir $1 tests bin docs
+        touch "${1}/__init__.py" "tests/${1}/__init.py__"
+    fi
+}
+
+count() {
+  total=$1
+  for ((i=total; i>0; i--)); do sleep 1; printf "Time remaining $i secs \r"; done
+  echo -e "\a"
+}
+
+se () {
+    case "$1" in
+        s)
+            dir="$HOME/dotfiles/"
+            ;;
+        p)
+            dir="$HOME/Projects"
+            ;;
+        *)
+            echo "Usage $0 : {s|p}"
+            return 1
+    esac
+    $EDITOR $(du -a $dir | awk '{print $2}' | grep -vi "node_module\|git\|.png\|jpeg\|jpg\|font" | fzf)
 }

@@ -1,0 +1,26 @@
+
+# Moroccan Radios
+
+📻 Hitradio|http://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3
+📻 MFM|http://newpub-stream01.itols.com:9001/casa.ogg
+📻 Cap Radio|http://51.255.235.165:5548/stream/1/
+#Radio Sawa|http://mbn-channel-06.akacast.akamaistream.net/7/28/233455/v1/ibb.akacast.akamaistream.net/mbn_channel_06
+📻 Medradio|http://medradio-maroc.ice.infomaniak.ch/medradio-maroc-64.mp3
+📻 NRJ Maroc|http://185.52.127.172/ma/55820/aac_64.mp3
+📻 Radio Soleil|http://radiosoleil.ice.infomaniak.ch/radiosoleil-128.mp3
+📻 Medina FM|http://icepe9.infomaniak.ch/medinafm-64.mp3
+📻 Radio Rai|http://broadcast.infomaniak.net/onlyrai-high
+📻 Radio 2M|https://radio2m-i.akamaihd.net/hls/live/624355/radio2m/playlist-32000.m3u8
+📻 Radio Ness|http://radio.nessradio.net:8000/nessradio.mp3
+📻 Chaine Inter|https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/radio_chaine_inter/hls_snrt_radio/radio_chaine_inter-video=100000-audio_AACL_qad_130400_110=130400.m3u8
+📻 Radio Plus|http://rpc.ice.infomaniak.ch/rpc-casa.mp3
+📻 Radio Aswat|http://broadcast.ice.infomaniak.ch/aswat-high.mp3
+📻 Anwa Rock|https://streaming.radionomy.com/Anwa-rock
+📻 Radio Mars|http://radiomars.ice.infomaniak.ch/radiomars-128.mp3
+📻 Medi1|http://streaming08.mit.ovea.com/medi1
+📻 The Moroccan Radio|https://streaming.radionomy.com/TheMoroccanRadio
+📻 Radio Orient|http://stream3.broadcast-associes.com:8405/Radio-Orient
+📻 Maroc Music|https://streaming.radionomy.com/MarocMusic
+📻 Radio StarMaroc|https://streaming.radionomy.com/RadioStarMaroc
+📻 Sawte Ouarzazate|http://78.129.187.57:19916
+📻 OhayoOtakuDesu|https://streaming.radionomy.com/OhayoOtakuDesuRadio

@@ -12,6 +12,8 @@ font pango:DejaVu Sans Mono, Awesome 9
 #########---Definitions---#########
 #-General-#
 set $mod Mod1
+
+#set $term xfce4-terminal
 set $term st
 set $shfolder ~/.config/scripts
 
@@ -84,8 +86,7 @@ exec --no-startup-id mpd
 #exec_always --no-startup-id wal -c && wal -i ~/.config/wall.png
 exec_always --no-startup-id feh --bg-scale ~/.config/wall.png
 #Xkb layout
-exec_always setxkbmap -layout us,ar
-exec_always setxkbmap -option grp:win_space_toggle
+exec --no-startup-id setxkbmap -layout us,ar -option grp:win_space_toggle
 #####################################
 
 ##############################
@@ -99,8 +100,8 @@ bindsym $mod+space		focus mode_toggle
 bindsym $mod+Escape		workspace prev
 bindsym $mod+Shift+Escape 	exec i3-msg exit
 
-#bindsym $mod+Shift+BackSpace	exec sudo reboot
 #bindsym $mod+BackSpace	exec sudo shutdown -h now
+bindsym $mod+shift+BackSpace	exec --no-startup-id $shfolder/lock.sh
 
 #bindsym $mod+asciitilde
 
@@ -120,7 +121,7 @@ bindsym $mod+Shift+b exec qutebrowser
 # bindsym $mod+Shift+c
 
 bindsym $mod+d			exec rofi -show run
-#bindsym $mod+Shift+d
+bindsym $mod+Shift+d    exec $shfolder/radio
 
 bindsym $mod+e  exec --no-startup-id $shfolder/rofi-emoji.sh
 bindsym $mod+Shift+e  exec firefox -private-window
@@ -249,6 +250,7 @@ for_window [class="Gimp"] move workspace $ws5
 for_window [class="Thunderbird"] move to workspace $ws9
 for_window [class="Library"] floating enable
 for_window [class="Library"] resize grow left 300, resize grow right 300, resize grow down 150, resize grow up 100, move scratchpad, scratchpad show;
+for_window [class="Radio"] move to workspace $ws10;
 for_window [instance="dropdowncalc"] floating enable
 for_window [instance="dropdowncalc"] resize set 800 300
 for_window [instance="dropdowncalc"] move scratchpad

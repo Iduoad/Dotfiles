@@ -47,7 +47,7 @@ alias gd="git diff"
 alias gdw="git diff --color-words"
 
 # System info aliases
-alias battery="upower -i $(upower -e | grep 'BAT') | grep -E \"state|to\ full|percentage\""
+#alias battery="upower -i $(upower -e | grep 'BAT') | grep -E \"state|to\ full|percentage\""
 
 # resuable format strings
 GIT_PRETTY_FORMAT="--pretty=\"%C(bold green)%h%Creset%C(auto)%d%Creset %s\""

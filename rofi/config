@@ -2,4 +2,4 @@
 rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
 
 # Light theme.
-rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
+# rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
