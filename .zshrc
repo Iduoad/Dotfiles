@@ -1,0 +1,1 @@
+/home/guru/dotfiles/zsh/.zshrc /home/guru/.zshrc

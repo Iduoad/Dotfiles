@@ -48,8 +48,8 @@ set $inc --no-startup-id amixer sset Master 2%+
 set $biginc --no-startup-id amixer sset Master 5%+
 set $dec --no-startup-id amixer sset Master 2%-
 set $bigdec --no-startup-id amixer sset Master 5%-
-set $mute --no-startup-id pamixer -t
-#set $mute --no-startup-id "amixer -q sset Master,0 toggle"
+#set $mute --no-startup-id pamixer -t
+set $mute --no-startup-id "amixer -q sset Master,0 toggle"
 set $truemute --no-startup-id amixer sset Master mute
 
 # Set Xresources colors:
@@ -282,15 +282,15 @@ bindsym F11		fullscreen toggle
 #bindsym $mod+F1		exec --no-startup-id mupdf ~/.config/i3/i3_guide.md.pdf
 #bindsym $mod+F2		exec --no-startup-id python ~/.config/Scripts/shortcuts.py
 #bindsym $mod+F3		exec --no-startup-id arandr
-bindsym $mod+F4		  kill
+bindsym $mod+F4		  	kill
 #bindsym $mod+F5		exec --no-startup-id sudo systemctl restart NetworkManager
 #bindsym $mod+F6		exec --no-startup-id st -e transmission-remote-cli
 #bindsym $mod+F7		exec transset -a --dec .15
 #bindsym $mod+F8		exec transset -a --inc .15
 #bindsym $mod+F9		exec --no-startup-id sudo mount -a
-#bindsym $mod+F10	exec --no-startup-id ~/.config/Scripts/screen.sh l ;; exec --no-startup-id ~/.config/polybar/launch.sh
-#bindsym $mod+F11	exec --no-startup-id ~/.config/Scripts/screen.sh v ;; exec --no-startup-id ~/.config/polybar/launch.sh
-#bindsym $mod+F12	exec --no-startup-id ~/.config/Scripts/screen.sh d ;; exec --no-startup-id ~/.config/polybar/launch.sh
+#bindsym $mod+F10		exec --no-startup-id ~/.config/Scripts/screen.sh l ;; exec --no-startup-id ~/.config/polybar/launch.sh
+#bindsym $mod+F11		exec --no-startup-id ~/.config/Scripts/screen.sh v ;; exec --no-startup-id ~/.config/polybar/launch.sh
+#bindsym $mod+F12		exec --no-startup-id ~/.config/Scripts/screen.sh d ;; exec --no-startup-id ~/.config/polybar/launch.sh
 
 ###---Arrow Keys---###
 bindsym $mod+Left		focus left

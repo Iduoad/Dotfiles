@@ -1,6 +1,6 @@
 #!/bin/bash
 TMPBG=/tmp/screen.png
-LOCK=$HOME/Pictures/lock.png
+LOCK=$HOME/.config/lock.png
 RES=$(xrandr | grep \* | awk '{print $1}')
 
 scrot $TMPBG

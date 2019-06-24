@@ -1,0 +1,1 @@
+/home/guru/dotfiles/vim/.vimrc /home/guru/.vimrc
