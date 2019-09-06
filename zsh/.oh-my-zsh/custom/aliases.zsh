@@ -4,6 +4,8 @@
 alias a="calcurse -a -t"
 alias email="thunderbird -ProfileManager"
 alias nf="clear && neofetch"
+alias td="transmission-daemon"
+alias trc="transmission-remote-cli"
 
 ### command-improved ###
 alias mkdir="mkdir -pv"

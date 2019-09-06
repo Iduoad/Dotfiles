@@ -110,4 +110,5 @@ export BROWSER='firefox'
 (cat ~/.cache/wal/sequences &)
 
 # To add support for TTYs this line can be optionally added.
+eval $(thefuck --alias)
 # source ~/.cache/wal/colors-tty.sh

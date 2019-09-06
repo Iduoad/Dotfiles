@@ -1,7 +1,30 @@
 #!/bin/zsh
+DOCS="$HOME/Documents"
+
+books() {
+    BOOKS_FOLDER="$DOCS/books"
+    line=$(ls -p $BOOKS_FOLDER | grep -v /$ | rofi -dmenu -i -p Books)
+    if [ -z $line ]; then
+        exit 0
+    else
+        result=${BOOKS_FOLDER}/${line}
+        linkhandler "$result"
+    fi
+}
+
+docs() {
+    DOCS_FOLDER="$DOCS/docs"
+    line=$(ls -p $DOCS_FOLDER | grep -v /$ | rofi -dmenu -i -p Books)
+    if [ -z $line ]; then
+        exit 0
+    else
+        result=${DOCS_FOLDER}/${line}
+        linkhandler "$result"
+    fi
+}
 
 LIBRARY_FILE="$HOME/dotfiles/scripts/rofi/library.txt"
-LIBRARY_FOLDER="$HOME/Documents"
+LIBRARY_FOLDER="$DOCS/notes"
 
 if ps -aux | grep "[L]ibrary" > /dev/null; then
     i3-msg 'scratchpad show'
@@ -17,6 +40,10 @@ else
         st -c Library -e ranger "/usr/share/doc/arch-wiki/html/en" & disown
     elif [ $result = "temp" ]; then
         st -c Library -e vim "/tmp/thinkering" & disown
+    elif [ $result = "books" ]; then
+        books
+    elif [ $result = "docs" ]; then
+        docs
     elif [ -z $result ]; then
         exit 0
     else
@@ -24,3 +51,5 @@ else
         st -c Library -e vim $result & disown
     fi
 fi
+
+

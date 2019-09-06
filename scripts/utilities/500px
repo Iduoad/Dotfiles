@@ -1,16 +1,17 @@
 #!/usr/bin/env python
 
 from json import loads
-from urllib.request import urlopen, urlretrieve
 from sys import argv
 import re
 
 from bs4 import BeautifulSoup
+import requests
 
 def imageFetch(px_url):
-    px_source =  urlopen(px_url)
-    soup = BeautifulSoup(px_source, 'html.parser')
+    px_source =  requests.get(px_url)
+    soup = BeautifulSoup(px_source.text, 'html.parser')
     raw_data = soup.find(string=re.compile('window.PxPreloadedData'))
+    open('a.txt', 'w').write(px_source.text)
     json_data = loads(raw_data.split('= ',1)[1].rstrip()[:-1])
 
     img_name = json_data['photo']['name']

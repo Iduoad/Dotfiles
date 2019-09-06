@@ -1,9 +1,8 @@
-
 # Moroccan Radios
 
-📻 Hitradio|http://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3
+📻 Hitradio|https://hitradio-maroc.ice.infomaniak.ch/hitradio-maroc-128.mp3
 📻 MFM|http://newpub-stream01.itols.com:9001/casa.ogg
-📻 Cap Radio|http://51.255.235.165:5548/stream/1/
+# 📻 Cap Radio|http://51.255.235.165:5548/stream/1/
 #Radio Sawa|http://mbn-channel-06.akacast.akamaistream.net/7/28/233455/v1/ibb.akacast.akamaistream.net/mbn_channel_06
 📻 Medradio|http://medradio-maroc.ice.infomaniak.ch/medradio-maroc-64.mp3
 📻 NRJ Maroc|http://185.52.127.172/ma/55820/aac_64.mp3
@@ -23,4 +22,57 @@
 📻 Maroc Music|https://streaming.radionomy.com/MarocMusic
 📻 Radio StarMaroc|https://streaming.radionomy.com/RadioStarMaroc
 📻 Sawte Ouarzazate|http://78.129.187.57:19916
+
+# Jazz & Blues & Country
+
+📻 Paradise|http://icy-5.radioparadise.com/ogg-96
+📻 Jazz Youtube|https://www.youtube.com/watch?v=io85zAxiA0E
+📻 Jazz & Soul|http://jazzradio.ice.infomaniak.ch/jazzradio-high.mp3
+📻 Majestic Jukebox Radio|http://uk3.internet-radio.com:8405/live
+📻 Smooth Jazz Global HD|http://uk3.internet-radio.com:8021/;stream
+📻 MEGATON CAFE RADIO|http://us2.internet-radio.com:8443/;stream
+📻 Austin Blues Radio|http://ca10.rcast.net:8036/;stream/1
+📻 TOP BLUES|http://us3.internet-radio.com:8342/;stream
+📻 Wcjsradio|http://us5.internet-radio.com:8201/;stream
+📻 AZZGROOVE|http://mp3-128.streamthejazzgroove.com/;stream/1
+📻 mooth Jazz Florida|http://us4.internet-radio.com:8266/;stream
+📻 LUX 89.5HD|http://192.96.205.59:7610/;stream/1
+📻 Big Blue Swing|http://209.236.126.18:8002/;
+📻 Irish Country Music Radio|http://46.28.49.164:7502/;
+📻 HPR1: Traditional Classic Country|http://188.165.192.5:8374/;
+
+# Dance & Pop
+
+📻 PARTY VIBE MUSIC|http://uk6.internet-radio.com:8124/;stream
+📻 MoveDaHouse|http://uk7.internet-radio.com:8000/;stream
+📻 Dance UK Radio|http://uk2.internet-radio.com:8024/;stream
+📻 Dance Wave!|http://95.140.38.209:8080/dance.mp3
+📻 All Hit Remixes|http://158.69.38.194:9212/;stream/1
+📻 Hitradio OE3|http://mp3stream7.apasf.apa.at:8000/;stream/1
+📻 Todays Hits|http://176.31.107.8:8270/;stream/1
+📻 Apintie Suriname|http://198.178.123.17:8150/;stream/1
+📻 Radio Dukagjini|http://198.178.123.17:8824/;stream/1
+
+# Rock & Metal
+
+📻 idobi Howl|http://69.46.88.26/;
+📻 Classic Rock Florida|http://us4.internet-radio.com:8258/;stream
+📻 KCSN 88.5 FM|http://130.166.82.184:8000/;stream/1
+📻 KNAC.COM|http://198.178.123.14:7346/;stream/1
+📻 xxxRock.fm|http://23.29.71.154:8140/;stream/1
+
+# Classical & Folk
+
+📻 Venice Classic Radio Italia|http://174.36.206.197:8000/;stream/1
+📻 Classical WETA 90.9 FM - Washington D.C.|http://38.100.128.106:8000/;stream/1
+📻 Ancient FM|http://5.152.208.98:8058/;
+📻 Radio-Carsija|http://carsija.topstream.net:19406/;stream/1
+📻 Pstradio|http://81.88.36.42:8020/;
+📻 Radio Deep Underground|http://193.111.153.40:8000/rdu.mp3
+
+# Misc
+
 📻 OhayoOtakuDesu|https://streaming.radionomy.com/OhayoOtakuDesuRadio
+📻 Buddhapillow Radio|http://us3.internet-radio.com:8399/;stream
+📻 CINEMIX|http://158.69.38.194:9098/;stream/1
+📻 Radio Play Emotions|http://5.39.82.157:8054/;stream/1

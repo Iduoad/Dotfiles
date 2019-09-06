@@ -12,4 +12,4 @@ if ps -aux | grep "[R]adio" > /dev/null; then
     kill $radio_pid
 fi
 
-st -c Radio -e mpv $radio_url & disown || notify-send "$radio_name is not working"
+st -c Radio -e mpv --no-video $radio_url & disown || notify-send "$radio_name is not working"

@@ -1,0 +1,59 @@
+stow,dotfile management,core
+gvim,text editor,core
+zsh,shell,core
+tmux,multiplexer,core
+ranger,file manager,core
+wget,downloader,core
+youtube-dl,video downloader,core
+openssh,ssh,core
+zip,zip,core
+unzip,unzip,core
+unrar,unrar,core
+htop,monitor,core
+fzf,fuzzy finder,core
+lvm2,lvm,system
+intel-ucode,intel microcode,system
+ntfs-3g,ntfs drivers,system
+exfat-utils,exfat drivers,system
+gvfs-mtp,mtp support,system
+gvfs-gphoto2,ppp support,system
+alsa-utils,alsa utilities,system
+alsa-plugins,alsa plugins,system
+alsa-firmware,alsa firmware,system
+pulseaudio,sound server,system
+pulseaudio-equalizer,equalizer for PA,system
+pulseaudio-alsa,alsa confs for PA,system
+xf86-input-keyboard,keyboard drivers,system
+xf86-input-synaptics,touchpad drivers,system
+xf86-input-mouse,mouse drivers,system
+xf86-input-libinput,more drivers,system
+xf86-video-intel,graphics drivers,system
+mesa,opengl implementation,system
+iw,wireless config,system
+wpa_supplicant,key negotiation for WPA,system
+dialog,dialog boxes,system
+mlocate,locate search,system
+xorg-server,x server,desktop
+xorg-xinit,xinit,desktop
+w3m,cli web browser,desktop
+arandr,xrander frontend,desktop
+i3-gaps,window manager,desktop
+dmenu,generic menu for x,desktop
+rofi,dmenu replacement,desktop
+zathura,document viewer,desktop
+zathura-pdf-mupdf,mupdf backend for zathura,desktop
+zathura-djvu,djvu support for zathura,desktop
+sdcv,stardict frontend,desktop
+translate-shell,google translate client,desktop
+mpd,music player daemon,desktop
+ncmpcpp,mpd client,desktop
+mpc,mpc client,desktop
+feh,image viewer and wp setter,desktop
+sxiv,image viewer,desktop
+scrot,screenshoter,desktop
+gimp,image manipulator,desktop
+newsboat,rss reader,desktop
+calcurse,todo list and appointements,desktop
+libreoffice,office suite,desktop
+code,visual studio code,code
+zeal,documentation,code

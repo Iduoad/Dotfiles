@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 
-import os
 import pathlib
+
 import requests
 from bs4 import BeautifulSoup
 
 class Manga:
     def __init__(
             self,
-            _dir =  '/home/shared/Pictures/Manga/OnePiece',
-            _url = 'https://www.shqqaa.com/manga/one-piece/',
-            _lastf = '/home/shared/Pictures/Manga/OnePiece/last.txt'
+            _dir =  '/home/guru/Pictures/Manga/AOT',
+        _url = 'https://www.shqqaa.com/manga/one-piece://www.shqqaa.com/manga/shingeki-no-kyojin/',
+            _lastf = '/home/guru/Pictures/Manga/AOT/last.txt'
             ):
 
         self.manga_dir = _dir
@@ -56,7 +56,7 @@ class Manga:
         else :
             self.manga_status = True
 
-        print(manga_status, " : ", manga_lastf)
+        print(self.manga_status, " : ", self.manga_lastf)
 
     def downloadStart(self):
         while not self.manga_status:

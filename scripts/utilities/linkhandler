@@ -14,7 +14,7 @@ vidsites="youtube.com
 ext="${1##*.}"
 mpvFiles="mkv mp4 gif webm"
 fehFiles="png jpg jpeg jpe"
-zathuraFiles="pdf"
+zathuraFiles="pdf epub djvu"
 
 if echo $fehFiles | grep -w $ext > /dev/null; then
 	feh "$1" >/dev/null & disown
@@ -25,5 +25,5 @@ elif echo $zathuraFiles | grep -w $ext > /dev/null; then
 elif echo "$@" | grep "$vidsites">/dev/null; then
 	mpv -quiet "$1" > /dev/null & disown
 else
-  $BROWSER "$1" 2>/dev/null & disown
+    $BROWSER "$1" 2>/dev/null & disown
 fi

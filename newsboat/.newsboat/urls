@@ -6,11 +6,8 @@ https://www.fossmint.com/feed/ "tech linux"
 https://itsfoss.com/feed/ "tech linux"
 http://lwkd.info/feed.xml "tech"
 https://importpython.com/blog/feed/
-https://javascriptweekly.com/rss "code"
-https://notifier.in/rss/hzdbw6lhuk1o083w0qylno32k9bdo6jt.xml
-https://www.kill-the-newsletter.com/feeds/cgr5lqsg8sx1dwc0jcfb.xml "code"
-https://css-tricks.com/feed/ "code"
-https://yts.am/rss "movies"
+#https://javascriptweekly.com/rss "code"
+#https://yts.am/rss "movies"
 https://www.transfermarkt.co.uk/rss/news "sport"
 
 #videos
@@ -22,3 +19,4 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCqa2MPu8bLY1PwVFUpSyVhQ "fu
 https://www.youtube.com/feeds/videos.xml?channel_id=UCB1O3eA-OwSIkYjQMzFtnLg "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCSAUGyc_xA8uYzaIVG6MESQ "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHEf6T_gVq4tlW5i91ESiWg "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-4KnPMmZzwAzW7SbVATUZQ "fun"

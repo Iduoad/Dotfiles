@@ -1,13 +1,11 @@
-📑 Learnt: my learning Journey-Learnt.md
-📱 My apps: apps to try-Apps.md
-⁉️ Solved: questions and problems and answers to them-Solved.md
-🐧 Arch Install: arch Install roadmap-ArchInstal.wiki
+⁉️ Learnt: my own stackoverflow-learnt.md
+📱 My apps: apps to try-install.md
+📖 Notes: notes about talks and videos-notes.json
+🎥 Reviews: movie and book reviews-reviews.json
+📜 Scripts: script todo list and -scripts.md
 🔢 Calculator: a python calculator-calc
-📖 Notes: notes about talks and videos-Notes.json
-📚 Goodreads: articles and books to read-reads.md
-🎥 Reviews: movie and book reviews-Reviews.json
+🐧 Arch Wiki: offline arch wiki-arch
+🕰️ Temporary: open a temporary file-temp
 ❎ Todo: my todo and appts-todo
-📜 Scripts: script todo list and -Scripts.wiki
-🔗 Links: list of links by topics-Links.md
-🦁 Arch Wiki: Offline Arch Wiki-arch
-🕰️ Temporary: Open a Temporary file-temp
+📚 Docs: documentation and cheatsheets-docs
+📖 Books: books and articles to read-books
