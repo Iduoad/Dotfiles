@@ -1,0 +1,15 @@
+session_name: stage
+start_directory: $HOME/Work
+windows:
+  - window_name: scraper
+    focus: true
+    layout: main-horizontal
+    start_directory: $HOME/Work/python/test/rekrute/rekrute
+    panes:
+      - pipenv shell; echo "Hello Iduoad" | figlet
+      - vim
+  - window_name: Dashboard
+    start_directory: $HOME/Work/VMs/
+    panes:
+      - cd mongo; echo "mongo" | figlet
+      - cd coreos-vagrant; echo "Metabase" | figlet

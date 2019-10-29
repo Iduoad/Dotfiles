@@ -28,12 +28,12 @@ bind-key x pb-delete
 #color info red black bold
 #color article cyan default
 
-browser linkhandler
+browser urlportal
 macro , open-in-browser
-macro v set browser "i3 exec mpv"; open-in-browser ; set browser linkhandler
-macro y set browser "spawndl"; open-in-browser ; set browser linkhandler
-macro w set browser "w3m"; open-in-browser ; set browser linkhandler
-macro p set browser "handler"; open-in-browser ; set browser linkhandler
+macro v set browser "i3 exec mpv"; open-in-browser ; set browser urlportal
+macro y set browser "spawndl"; open-in-browser ; set browser urlportal
+macro w set browser "w3m"; open-in-browser ; set browser urlportal
+macro p set browser "handler"; open-in-browser ; set browser urlportal
 # c copies the link to the clipboard.
 # The line below is probably the skiddiest line I've ever written.
-macro c set browser "copy(){ echo $1 | xclip ;}; copy "; open-in-browser ; set browser linkhandler
+macro c set browser "copy(){ echo $1 | xclip ;}; copy "; open-in-browser ; set browser urlportal

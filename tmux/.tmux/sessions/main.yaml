@@ -1,0 +1,27 @@
+session_name: home
+start_directory: $HOME
+windows:
+  - window_name: desktop
+    focus: true
+    layout: main-horizontal
+    panes:
+      - vu
+      - echo "Hello Iduoad" | figlet
+  - window_name: rss
+    panes:
+      - newsboat
+  - window_name: mail
+    panes:
+      - neomutt
+  - window_name: bt
+    layout: tiled
+    panes:
+      - trc
+      - vifm $HOME/Downloads/torrents
+      - echo "Explore The Internet" | figlet
+  - window_name: music
+    panes:
+      - ncmpcpp
+      - echo "Internet Music" | figlet
+  - window_name: chat
+      - weechat

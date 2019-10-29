@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+IS_MPD=$(ps -aux | grep "[m]pd")
+if [[ -n IS_MPD ]] &&  [[ $(mpc | wc -l) -ge 3 ]]; then
+    PLAYING=$(mpc | sed -n '1p')
+    TIME=$(mpc | sed -n '2p' | awk '{print $3}')
+    mpc | grep -i playing >& /dev/null && STATUS="▶" || STATUS="⏹"
+    echo "${PLAYING:0:23}... $STATUS $TIME"
+else
+    echo "S9iil"
+fi

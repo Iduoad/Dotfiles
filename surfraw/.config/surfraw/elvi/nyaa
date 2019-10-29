@@ -1,0 +1,33 @@
+#!/bin/sh
+# elvis: nyaa      -- Search nyaa (https://nyaa.si)
+
+. surfraw || exit 1
+
+w3_usage_hook () {
+    cat <<EOF
+
+Usage: $w3_argv0 [options] [search words]...
+Description:
+  Search nyaa.si for torrents
+
+EOF
+    w3_global_usage
+}
+
+w3_parse_option_hook () {
+    opt="$1"
+    optarg="$2"
+    case "$opt" in
+    -s*=*)   setopt   SURFRAW_bay_categories   $optarg ;;
+    *) return 1 ;;
+    esac
+    return 0
+}
+
+w3_config
+w3_parse_args "$@"
+
+# w3_args now contains a list of arguments
+escaped_args=$(w3_url_of_arg $w3_args)
+
+w3_browse_url "https://nyaa.si/?q=${escaped_args}"

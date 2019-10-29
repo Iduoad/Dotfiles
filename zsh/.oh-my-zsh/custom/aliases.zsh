@@ -11,8 +11,9 @@ alias trc="transmission-remote-cli"
 alias mkdir="mkdir -pv"
 alias du='du -kh'
 alias df='df -kTh'
+alias free='free -h'
 alias cal='cal -3m'
-alias date='date "+%A, %B %d, %Y [%T]"'
+# alias date='date "+%A, %B %d, %Y [%T]"'
 alias walrand='wal --theme random && echo -e "colors = $(cat ~/.cache/wal/colors.json)" > ~/.config/browser/colors.json'
 alias walrandl='wal --theme random_light && echo -e "colors = $(cat ~/.cache/wal/colors.json)" > ~/.config/browser/colors.json'
 
@@ -32,34 +33,7 @@ alias ythigh='youtube-dl -ic'
 alias py2serv="python -m SimpleHTTPServer"
 alias py3serv="python3 -m http.server"
 alias pyserv="py3serv"
-  #git
-alias git-lastmerge="git whatchanged -2 --oneline -p"
-alias git-last="git whatchanged -1 --oneline -p"
 
-alias ga="git add"
-alias gap="git add --patch"
-
-alias gc="git commit"
-alias gca="git commit -a"
-alias gcm="git commit -m"
-alias gcam="git commit -am"
-
-alias gs="git status"
-alias gd="git diff"
-alias gdw="git diff --color-words"
-
-# System info aliases
+# Info aliases
 alias battery="cat /sys/class/power_supply/BAT0/status /sys/class/power_supply/BAT0/capacity* | tr '\n' ' : '"
-
-# resuable format strings
-GIT_PRETTY_FORMAT="--pretty=\"%C(bold green)%h%Creset%C(auto)%d%Creset %s\""
-GIT_PRETTY_FORMAT_AUTHOR="--pretty=\"%C(bold green)%h%Creset %C(yellow)%an%Creset%C(auto)%d%Creset %s\""
-
-# pretty Git log
-alias gl="git log --graph $GIT_PRETTY_FORMAT"
-# pretty Git log, all references
-alias gll='gl --all'
-# pretty Git log, show authors
-alias gla="git log --graph $GIT_PRETTY_FORMAT_AUTHOR"
-# pretty Git log, all references, show authors
-alias glla='gla --all'
+alias weather="curl wttr.in"

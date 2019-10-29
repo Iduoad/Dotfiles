@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Torrent
+Type=Application
+Exec=linkhandler %U
+NoDisplay=true
+MimeType=x-scheme-handler/magnet;
+Terminal=truegnet;application/x-bittorent;

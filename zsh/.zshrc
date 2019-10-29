@@ -62,10 +62,11 @@ ZSH_THEME="aussiegeek"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git fzf zsh-autosuggestions zsh-syntax-highlighting)
+
+ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 
 source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -78,10 +79,19 @@ export LC_ALL=en_US.UTF-8
 # add scripts to PATH
 export PATH="$PATH:$HOME/.config/scripts:$HOME/.gem/ruby/2.6.0/bin:$HOME/.local/bin"
 
+# disable auto title (for tmuxp)
+export DISABLE_AUTO_TITLE='true'
+
 # add dictionaries path
 export STARDICT_DATA_DIR="$HOME/.config/stardict/dic"
+
 export EDITOR='vim'
 export BROWSER='firefox'
+export FILE='vu'
+export TERMINAL='st'
+
+mpd &> /dev/null
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -110,5 +120,4 @@ export BROWSER='firefox'
 (cat ~/.cache/wal/sequences &)
 
 # To add support for TTYs this line can be optionally added.
-eval $(thefuck --alias)
 # source ~/.cache/wal/colors-tty.sh

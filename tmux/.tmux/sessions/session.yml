@@ -1,0 +1,27 @@
+session_name: stage
+start_directory: $HOME/Work
+windows:
+  - window_name: Blog1
+    focus: true
+    layout: tiled
+    start_directory: $HOME/Work/session1/blog1/blog/posts
+    panes:
+      - vim models.py
+      - vim views.py
+      - vim urls.py
+      - pipenv shell; echo "Execute" | figlet
+  - window_name: Blog2
+    start_directory: $HOME/Work/session1/blog2
+    layout: tiled
+    panes:
+      - cd blog; vim app.py
+      - pipenv shell; cd blog;
+      - cd client/blog; vim src;
+  - window_name: Blog3.4
+    start_directory: $HOME/Work/VMs/blogs
+  - window_name: Blog5
+    start_directory: $HOME/Work/session1/blog5
+    layout: tiled
+    panes:
+      - echo "CODE" | figlet
+      - echo "RUN" | figlet

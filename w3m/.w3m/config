@@ -1,0 +1,29 @@
+display_link 1
+display_link_number 1
+decode_url 0
+display_lineinfo 1
+
+alt_entity          0
+graphic_char        1
+display_link_number 1
+display_image       0
+
+extbrowser urlportal
+
+mime_types ~/.mime.types, /etc/mime.types
+
+cookie_avoid_wrong_number_of_dots
+cookie_accept_domains
+cookie_reject_domains
+accept_bad_cookie 0
+accept_cookie 0
+show_cookie 1
+use_cookie 0
+
+urimethodmap ~/.w3m/urimethodmap
+cgi_bin ~/.w3m/cgi-bin
+
+#user_agent user_agent Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0
+#accept_language en-US,en;q=0.5
+# accept_encoding gzip, deflate
+# accept_media text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8

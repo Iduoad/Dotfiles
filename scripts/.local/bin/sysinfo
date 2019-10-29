@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+case "$OSTYPE" in
+    linux-gnu)
+        if which sensors > /dev/null; then
+            CPU_TEMP=$(sensors | grep Core | awk '{print $3;}' | grep -oEi '[0-9]+.[0-9]+' | awk '{total+=$1; count+=1} END {print total/count}')
+        else
+            ""
+        fi
+        CPU=$(grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {printf "%.2f", usage "%"}')
+        FREE_MEM=$(free -h | awk '/^Mem/{print $7}')
+
+        echo "C: $CPU% T: ${CPU_TEMP}C M: $FREE_MEM"
+        ;;
+esac

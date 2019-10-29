@@ -1,0 +1,108 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+'H
+	/home/guru/
+	..
+1568545345
+'b
+	/home/guru/bin/
+	..
+1568545345
+'h
+	/home/guru/
+	..
+1568545345
+'z
+	/home/guru/.config/vifm
+	..
+1568545345
+
+# Bookmarks:
+
+# TUI:
+al
+q1
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home
+	lost+found
+2
+d/
+	home
+4
+d/home/guru
+	tmp
+13
+d/home/guru/tmp
+	A Guide To Morocco's Startup Ecosystem - WeeTracker.html
+6
+d/home/guru
+	Work
+10
+d/home/guru/Work
+	VMs
+1
+d/home/guru
+	report.md
+21
+d/home/guru/.config/vifm/scripts
+	..
+0
+d/home/guru
+	Downloads
+5
+d/home/guru/Downloads
+	The Secret Rules Of Modern Living Algorithms (2015) [WEBRip] [720p] [YTS.AM]
+6
+d/home/guru/Downloads/The Secret Rules Of Modern Living Algorithms (2015) [WEBRip] [720p] [YTS.AM]
+	..
+0
+d/home/guru/Downloads
+	See.You.Yesterday.2019.720p.WEBRip.800MB.x264-GalaxyRG[TGx]
+3
+d/home/guru/Downloads/See.You.Yesterday.2019.720p.WEBRip.800MB.x264-GalaxyRG[TGx]
+	See.You.Yesterday.2019.720p.WEBRip.800MB.x264-GalaxyRG.mkv
+1
+d/home/guru/Downloads
+	Hail, Caesar! (2016) [YTS.AG]
+2
+d/home/guru/Downloads/Hail, Caesar! (2016) [YTS.AG]
+	Hail,.Caesar!.2016.720p.BluRay.x264-[YTS.AG].mp4.part
+1
+
+# Right window history (oldest to newest):
+D/home/guru
+	dotfiles
+11
+D/home
+	guru
+1
+D/home/guru
+	idu
+20
+D/home/guru/.config/vifm/scripts
+	..
+0
+
+# Command line history (oldest to newest):
+:marks
+:q
+
+# Search history (oldest to newest):
+
+# Prompt history (oldest to newest):
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/guru/idu
+
+# Directory stack (oldest to newest):
+
+# Trash content:

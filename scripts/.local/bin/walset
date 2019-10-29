@@ -1,0 +1,38 @@
+#!/usr/bin/env sh
+
+usage() { echo "Usage: $0 [-c] [-l] [-f=FG_IMAGE]" 1>&2; exit 1; }
+
+browser_colors() {
+    echo -e "colors = $(cat ~/.cache/wal/colors.json)" > ~/.config/browser/colors.json
+}
+
+zathura_colors() {
+    zsh $HOME/.config/Scripts/zathcolors.sh > $HOME/.config/zathura/zathurarc
+}
+
+[ $# -gt 4 ] && usage
+
+while getopts "clf:" param; do
+    case $param in
+        c)
+            color=true
+            ;;
+        f)
+            filename="$OPTARG"
+            ;;
+        l)
+            ligh_theme=true
+            ;;
+        *)
+            usage
+    esac
+done
+
+echo "$filename"
+if [[ -f $filename ]]; then
+    [[ $color == true ]] && wal -i $filename || feh --bg-scale $filename && wal -R
+else
+    [[ $ligh_theme == true ]] && wal --theme random_light || wal --theme random
+fi
+
+browser_colors
