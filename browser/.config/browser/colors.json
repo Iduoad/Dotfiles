@@ -1,28 +1,28 @@
 colors = {
-    "wallpaper": "None",
+    "wallpaper": "/home/guru/Downloads/btwf98l5ye541.png",
     "alpha": "100",
 
     "special": {
-        "background": "#575757",
-        "foreground": "#dcdccc",
-        "cursor": "#ff8278"
+        "background": "#000000",
+        "foreground": "#cabfa6",
+        "cursor": "#cabfa6"
     },
     "colors": {
-        "color0": "#666666",
-        "color1": "#ff8278",
-        "color2": "#bde077",
-        "color3": "#eadc84",
-        "color4": "#77bee0",
-        "color5": "#dd91f3",
-        "color6": "#ffc178",
-        "color7": "#dddddd",
-        "color8": "#888888",
-        "color9": "#ff8278",
-        "color10": "#bde077",
-        "color11": "#eadc84",
-        "color12": "#77bee0",
-        "color13": "#dd91f3",
-        "color14": "#ffc178",
-        "color15": "#dddddd"
+        "color0": "#000000",
+        "color1": "#5C5749",
+        "color2": "#8F1C1E",
+        "color3": "#90262E",
+        "color4": "#BE2628",
+        "color5": "#C12728",
+        "color6": "#C86245",
+        "color7": "#cabfa6",
+        "color8": "#8d8574",
+        "color9": "#5C5749",
+        "color10": "#8F1C1E",
+        "color11": "#90262E",
+        "color12": "#BE2628",
+        "color13": "#C12728",
+        "color14": "#C86245",
+        "color15": "#cabfa6"
     }
 }

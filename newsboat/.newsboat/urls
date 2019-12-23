@@ -1,55 +1,65 @@
 # Queries
-"query:All Articles Tech-News:tags # \"Tech-News\"" "Tech-News"
-"query:All Articles Linux-News:tags # \"Linux-News\"" "Linux-News"
-"query:All Articles Hacking-code:tags # \"Hacking-code\"" "Hacking-code"
-"query:All Articles Linux-Videos:tags # \"Linux-Videos\"" "Linux-Videos"
+# "query:All Articles Tech-News:tags # \"Tech-News\"" "Tech-News"
+# "query:All Articles Linux-News:tags # \"Linux-News\"" "Linux-News"
+# "query:All Articles Hacking-code:tags # \"Hacking-code\"" "Hacking-code"
+# "query:All Articles Linux-Videos:tags # \"Linux-Videos\"" "Linux-Videos"
 
 # Not tagged
 https://www.archlinux.org/feeds/news/
 https://www.sudosatirical.com/articles/index.xml
-https://importpython.com/blog/feed/
 
-# Sport
-https://www.reddit.com/r/soccer/.rss "sport"
-https://www.reddit.com/r/juve/.rss "sport"
-https://www.transfermarkt.co.uk/rss/news "sport"
-https://highlightsfootball.com/feed/ "sport"
-
-# Youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCqa2MPu8bLY1PwVFUpSyVhQ "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCB1O3eA-OwSIkYjQMzFtnLg "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCSAUGyc_xA8uYzaIVG6MESQ "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCHEf6T_gVq4tlW5i91ESiWg "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC-4KnPMmZzwAzW7SbVATUZQ "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC9c89meMU-ES5hb3CVAgIjQ "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCWQhT_gni7EIKEpfd5tEGtQ "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJjSDX-jUChzOEyok9XYRJQ "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC0j1bJUOS_utB8q618YJ5Bw "fun"
-# Linux News
+---------------News---------------
+# Blogs
 https://www.fossmint.com/feed/ "Linux-News"
 https://itsfoss.com/feed/ "Linux-News"
 https://www.phoronix.com/rss.php "Linux-News"
 http://lwkd.info/feed.xml "Linux-News"
+https://lwn.net/headlines/rss "Linux-News"
 http://lxer.com/module/newswire/headlines.rss "Linux-News"
-https://www.reddit.com/r/linux/.rss "Linux-News"
-
-# Hacking/Code
-https://www.reddit.com/r/selfhosted/.rss "Hacking-Code"
-https://www.reddit.com/r/sysadmin/.rss "Hacking-Code"
-
-# Tech news
 https://news.ycombinator.com/rss "Tech-News"
-https://www.reddit.com/r/technology/.rss "Tech-News"
+https://feeds.feedburner.com/DailyTechHeadlines "~Podcast -- DailyTechHeadlines" "Linux-Podcasts"
+https://feeds.fireside.fm/linuxheadlines/rss "~Podcast -- Linux Headlines" "Linux-Podcasts"
 
+# Reddit
+---------------Reddit---------------
+https://www.reddit.com/r/soccer/.rss "~Reddit -- Soccer" "sport"
+https://www.reddit.com/r/juve/.rss "~Reddit -- Juventus" "sport"
+https://www.reddit.com/r/linux/.rss "~Reddit -- Linux" "Linux-News"
+https://www.reddit.com/r/selfhosted/.rss "~Reddit -- Self Hosted" "Hacking-Code"
+https://www.reddit.com/r/sysadmin/.rss "~Reddit -- Sysadmin" "Hacking-Code"
+https://www.reddit.com/r/technology/.rss "~Reddit -- Technology" "Tech-News"
+
+
+---------------Youtube---------------
+# Youtube
+https://www.youtube.com/feeds/videos.xml?channel_id=UCBJeMCIeLQos7wacox4hmLQ "~Youtube -- Serie A" "sport"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCTv-XvfzLX3i4IGWAm4sbmA "~Youtube -- La Liga" "sport"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCSAUGyc_xA8uYzaIVG6MESQ "~Youtube -- nigahiga" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCqa2MPu8bLY1PwVFUpSyVhQ "~Youtube -- Hiho Kids" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHEf6T_gVq4tlW5i91ESiWg "~Youtube -- React" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCB1O3eA-OwSIkYjQMzFtnLg "~Youtube -- 1D2C" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-4KnPMmZzwAzW7SbVATUZQ "~Youtube -- AJ+ Arabic" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCWQhT_gni7EIKEpfd5tEGtQ "~Youtube -- Zoz Vlogs" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJjSDX-jUChzOEyok9XYRJQ "~Youtube -- Jubilee" "fun"
+
+---------------Podcasts---------------
+# Podcasts
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNbqa_9xihC8yaV2o6dlsUg "~Podcast -- Security Now" "Linux-Podcasts"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCagoIYmo_gO1iVaCeeSikEg "~Podcast -- This Week In Tech" "Linux-Podcasts"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCmyGZ0689ODyReHw3rsKLtQ "~Podcast -- TuxDigital" "Linux-Podcasts"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCWJUSpXVHTaHErtGWC5qPlQ "~Podcast -- Destination Linux" "Linux-Podcasts"
+
+---------------TechVideos---------------
 
 # Videos
-https://www.youtube.com/feeds/videos.xml?channel_id=UCk9NvmsPBC3lTn_L9kFaylA "Linux-Videos"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCf93fPKwotph47H3_KDcRyg "Linux-Videos"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCrUL8K81R4VBzm-KOYwrcxQ "Linux-Videos"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "Linux-Videos"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "Linux-Videos"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "Linux-Videos"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVRJ6D343dX-x730MRP8tNw "Linux-Videos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVRJ6D343dX-x730MRP8tNw "~Podcast -- cocadmin" "Linux-Podcasts"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCk9NvmsPBC3lTn_L9kFaylA "~Youtube -- iBSD" "Linux-Videos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCrUL8K81R4VBzm-KOYwrcxQ "~Youtube -- Engineer Man" "Linux-Videos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~Youtube -- gotbletu" "Linux-Videos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Youtube -- Luke Smith" "Linux-Videos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "~Youtube -- DistroTube" "Linux-Videos"
+
+
 # https://www.youtube.com/feeds/videos.xml?channel_id=UCa1zuotKU4Weuw_fLRnPv0A "Linux-Videos" vue mastery
 
 
