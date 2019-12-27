@@ -52,7 +52,8 @@ BROWSERCLI="/usr/bin/w3m"
 # DEFAULT="xdg-open"
 # DEFAULT="chromium --incognito"
 # DEFAULT="w3m"
-DEFAULT="$BROWSER"
+# DEFAULT="$BROWSER"
+DEFAULT="$BROWSERCLI"
 ## long videos like youtube
 VIDEO_QUEUE="tsp mpv --x11-name mpvFloating --ontop --no-border --force-window --autofit=500x280 --geometry=-15-53"
 ## short videos/animated gif clips

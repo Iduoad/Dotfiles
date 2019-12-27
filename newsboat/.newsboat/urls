@@ -12,11 +12,11 @@ https://www.sudosatirical.com/articles/index.xml
 # Blogs
 https://www.fossmint.com/feed/ "Linux-News"
 https://itsfoss.com/feed/ "Linux-News"
+
 https://www.phoronix.com/rss.php "Linux-News"
-http://lwkd.info/feed.xml "Linux-News"
 https://lwn.net/headlines/rss "Linux-News"
 http://lxer.com/module/newswire/headlines.rss "Linux-News"
-https://news.ycombinator.com/rss "Tech-News"
+
 https://feeds.feedburner.com/DailyTechHeadlines "~Podcast -- DailyTechHeadlines" "Linux-Podcasts"
 https://feeds.fireside.fm/linuxheadlines/rss "~Podcast -- Linux Headlines" "Linux-Podcasts"
 
@@ -24,23 +24,27 @@ https://feeds.fireside.fm/linuxheadlines/rss "~Podcast -- Linux Headlines" "Linu
 ---------------Reddit---------------
 https://www.reddit.com/r/soccer/.rss "~Reddit -- Soccer" "sport"
 https://www.reddit.com/r/juve/.rss "~Reddit -- Juventus" "sport"
-https://www.reddit.com/r/linux/.rss "~Reddit -- Linux" "Linux-News"
+
 https://www.reddit.com/r/selfhosted/.rss "~Reddit -- Self Hosted" "Hacking-Code"
 https://www.reddit.com/r/sysadmin/.rss "~Reddit -- Sysadmin" "Hacking-Code"
-https://www.reddit.com/r/technology/.rss "~Reddit -- Technology" "Tech-News"
 
+https://www.reddit.com/r/linux/.rss "~Reddit -- Linux" "Linux-News"
+https://www.reddit.com/r/technology/.rss "~Reddit -- Technology" "Tech-News"
+https://news.ycombinator.com/rss "~News -- YC Hacker News" "Tech-News"
 
 ---------------Youtube---------------
 # Youtube
 https://www.youtube.com/feeds/videos.xml?channel_id=UCBJeMCIeLQos7wacox4hmLQ "~Youtube -- Serie A" "sport"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCTv-XvfzLX3i4IGWAm4sbmA "~Youtube -- La Liga" "sport"
+
 https://www.youtube.com/feeds/videos.xml?channel_id=UCSAUGyc_xA8uYzaIVG6MESQ "~Youtube -- nigahiga" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCqa2MPu8bLY1PwVFUpSyVhQ "~Youtube -- Hiho Kids" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCHEf6T_gVq4tlW5i91ESiWg "~Youtube -- React" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCB1O3eA-OwSIkYjQMzFtnLg "~Youtube -- 1D2C" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC-4KnPMmZzwAzW7SbVATUZQ "~Youtube -- AJ+ Arabic" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCWQhT_gni7EIKEpfd5tEGtQ "~Youtube -- Zoz Vlogs" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCJjSDX-jUChzOEyok9XYRJQ "~Youtube -- Jubilee" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHEf6T_gVq4tlW5i91ESiWg "~Youtube -- React" "fun"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UC-4KnPMmZzwAzW7SbVATUZQ "~Youtube -- AJ+ Arabic" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCB1O3eA-OwSIkYjQMzFtnLg "~Youtube -- 1D2C" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCWQhT_gni7EIKEpfd5tEGtQ "~Youtube -- Zoz Vlogs" "fun"
 
 ---------------Podcasts---------------
 # Podcasts
@@ -50,20 +54,19 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCmyGZ0689ODyReHw3rsKLtQ "~P
 https://www.youtube.com/feeds/videos.xml?channel_id=UCWJUSpXVHTaHErtGWC5qPlQ "~Podcast -- Destination Linux" "Linux-Podcasts"
 
 ---------------TechVideos---------------
-
 # Videos
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVRJ6D343dX-x730MRP8tNw "~Podcast -- cocadmin" "Linux-Podcasts"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg "~Youtube -- 2 minutes papers" "Tech-Videos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVRJ6D343dX-x730MRP8tNw "~Youtube -- cocadmin" "Linux-Podcasts"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCk9NvmsPBC3lTn_L9kFaylA "~Youtube -- iBSD" "Linux-Videos"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCrUL8K81R4VBzm-KOYwrcxQ "~Youtube -- Engineer Man" "Linux-Videos"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~Youtube -- gotbletu" "Linux-Videos"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Youtube -- Luke Smith" "Linux-Videos"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "~Youtube -- DistroTube" "Linux-Videos"
 
-
 # https://www.youtube.com/feeds/videos.xml?channel_id=UCa1zuotKU4Weuw_fLRnPv0A "Linux-Videos" vue mastery
-
-
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCrUL8K81R4VBzm-KOYwrcxQ "~Youtube -- Engineer Man" "Linux-Videos"
 #https://javascriptweekly.com/rss "code"
 #https://yts.am/rss "movies"
 # https://www.linuxjournal.com/news/feed "~linux journal news" "tech linux"
 # https://www.reddit.com/r/linuxquestions/.rss "tech"
+#http://lwkd.info/feed.xml "Linux-News" # Last week in K8s dev

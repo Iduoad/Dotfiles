@@ -1,28 +1,28 @@
 colors = {
-    "wallpaper": "/home/guru/Downloads/btwf98l5ye541.png",
+    "wallpaper": "/home/guru/Pictures/wp/22.jpg",
     "alpha": "100",
 
     "special": {
-        "background": "#000000",
-        "foreground": "#cabfa6",
-        "cursor": "#cabfa6"
+        "background": "#0d0c06",
+        "foreground": "#d6d4cb",
+        "cursor": "#d6d4cb"
     },
     "colors": {
-        "color0": "#000000",
-        "color1": "#5C5749",
-        "color2": "#8F1C1E",
-        "color3": "#90262E",
-        "color4": "#BE2628",
-        "color5": "#C12728",
-        "color6": "#C86245",
-        "color7": "#cabfa6",
-        "color8": "#8d8574",
-        "color9": "#5C5749",
-        "color10": "#8F1C1E",
-        "color11": "#90262E",
-        "color12": "#BE2628",
-        "color13": "#C12728",
-        "color14": "#C86245",
-        "color15": "#cabfa6"
+        "color0": "#0d0c06",
+        "color1": "#942F12",
+        "color2": "#A25708",
+        "color3": "#D9600A",
+        "color4": "#A84757",
+        "color5": "#DDAB2F",
+        "color6": "#667E96",
+        "color7": "#d6d4cb",
+        "color8": "#95948e",
+        "color9": "#942F12",
+        "color10": "#A25708",
+        "color11": "#D9600A",
+        "color12": "#A84757",
+        "color13": "#DDAB2F",
+        "color14": "#667E96",
+        "color15": "#d6d4cb"
     }
 }

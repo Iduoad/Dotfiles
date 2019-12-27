@@ -74,22 +74,6 @@ export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-# add scripts to PATH
-export PATH="$PATH:$HOME/.config/scripts:$HOME/.gem/ruby/2.6.0/bin:$HOME/.local/bin"
-
-# disable auto title (for tmuxp)
-export DISABLE_AUTO_TITLE='true'
-
-# add dictionaries path
-export STARDICT_DATA_DIR="$HOME/.config/stardict/dic"
-
-export EDITOR='vim'
-export BROWSER='firefox'
-export FILE='vu'
-export TERMINAL='st'
-
-mpd &> /dev/null
-
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
