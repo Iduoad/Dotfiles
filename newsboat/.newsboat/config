@@ -1,6 +1,8 @@
 auto-reload yes
-
-external-url-viewer "urlview"
+confirm-exit yes
+keep-articles-days 180
+reload-threads 5
+reload-time 30
 
 bind-key j down
 bind-key k up
@@ -21,19 +23,27 @@ bind-key D pb-download
 bind-key U show-urls
 bind-key x pb-delete
 
-#color listnormal cyan default
-#color listfocus black yellow standout bold
-#color listnormal_unread blue default
-#color listfocus_unread yellow default bold
-#color info red black bold
-#color article cyan default
-
 browser urlportal
 macro , open-in-browser
 macro v set browser "i3 exec mpv"; open-in-browser ; set browser urlportal
 macro y set browser "spawndl"; open-in-browser ; set browser urlportal
-macro w set browser "w3m"; open-in-browser ; set browser urlportal
-macro p set browser "handler"; open-in-browser ; set browser urlportal
+macro w set browser "i3 exec surf"; open-in-browser ; set browser urlportal
 # c copies the link to the clipboard.
 # The line below is probably the skiddiest line I've ever written.
-macro c set browser "copy(){ echo $1 | xclip ;}; copy "; open-in-browser ; set browser urlportal
+macro c set browser "copy(){ echo $1 | xclip -selection clipboard ;}; copy "; open-in-browser ; set browser urlportal
+
+
+highlight article     "(^Feed:.*|^Title:.*|^Author:.*)"     color75  default
+highlight article     "(^Link:.*|^Date:.*)"                 color75  default
+highlight article     "^Podcast Download URL:.*"            color71  default
+highlight article     "^Links:"                             white    color240 underline
+highlight article     "\\[[0-9][0-9]*\\]"                   color72  default  bold
+highlight article     "\\[image [0-9][0-9]*\\]"             color72  default  bold
+highlight article     "\\[embedded flash: [0-9][0-9]*\\]"   color72  default  bold
+highlight article     ":.*\\(link\\)$"                      color74  default
+highlight article     ":.*\\(image\\)$"                     color74  default
+highlight article     ":.*\\(embedded flash\\)$"            color74  default
+
+color listnormal                                            white    default
+color info                                                  default  color240
+

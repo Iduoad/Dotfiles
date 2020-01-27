@@ -14,7 +14,5 @@ export FILE='vu'
 export READER="zathura"
 export TERMINAL='st'
 
-mpd >/dev/null 2>&1 &
-
 # Start graphical server on tty1 if not already running.
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Xorg >/dev/null && exec startx

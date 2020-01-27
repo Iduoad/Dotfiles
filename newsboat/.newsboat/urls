@@ -10,12 +10,15 @@ https://www.sudosatirical.com/articles/index.xml
 
 ---------------News---------------
 # Blogs
+http://feeds.reuters.com/reuters/AFRICAWorldNews "World-News"
 https://www.fossmint.com/feed/ "Linux-News"
 https://itsfoss.com/feed/ "Linux-News"
 
 https://www.phoronix.com/rss.php "Linux-News"
 https://lwn.net/headlines/rss "Linux-News"
 http://lxer.com/module/newswire/headlines.rss "Linux-News"
+
+thenewstack.io/blog/feed/ "Tech-News"
 
 https://feeds.feedburner.com/DailyTechHeadlines "~Podcast -- DailyTechHeadlines" "Linux-Podcasts"
 https://feeds.fireside.fm/linuxheadlines/rss "~Podcast -- Linux Headlines" "Linux-Podcasts"
