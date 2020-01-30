@@ -1,0 +1,37 @@
+# vim: filetype=muttrc
+
+# sources
+source mutt/settings
+source mutt/keys
+source mutt/color
+
+# paths
+set header_cache = "~/.cache/mutt/headers"
+set message_cachedir = "~/.cache/mutt/bodies"
+set mailcap_path = "~/.local/share/mutt/mailcap"
+
+# variables
+set my_pass = `pass gmail.com/m.iduoad@gmail.com`
+
+# recieve options
+set imap_user = "m.iduoad@gmail.com"
+set imap_pass = $my_pass
+set imap_check_subscribed
+
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX" #Location of inbox
+set postponed = "+[GMail]/Drafts" #Location of drafts
+set trash = "+[GMail]/Trash" #Location of trash
+set record = "+[GMail]/Sent" #Location of sent
+
+# send options
+set smtp_url = "smtps://m.iduoad@gmail.com@smtp.uit.ac.ma:587"
+set smtp_pass = $my_pass
+set from = "m.iduoad@gmail.com"
+
+set realname  = "Mohammed Daoudi"
+set signature = "DAOUDI Mohammed"
+
+# Connection options
+set ssl_force_tls = yes
+unset ssl_starttls
