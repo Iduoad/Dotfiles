@@ -2,58 +2,108 @@ stow,dotfile management,core
 gvim,text editor,core
 zsh,shell,core
 tmux,multiplexer,core
-ranger,file manager,core
-wget,downloader,core
-youtube-dl,video downloader,core
+vifm,file manager,core
+htop,monitor,core
 openssh,ssh,core
+wget,downloader,core
 zip,zip,core
 unzip,unzip,core
 unrar,unrar,core
-htop,monitor,core
-fzf,fuzzy finder,core
-lvm2,lvm,system
 intel-ucode,intel microcode,system
+linux-firmware,linux firmware,system
 ntfs-3g,ntfs drivers,system
 exfat-utils,exfat drivers,system
-gvfs-mtp,mtp support,system
-gvfs-gphoto2,ppp support,system
+lvm2,lvm,system
 alsa-utils,alsa utilities,system
 alsa-plugins,alsa plugins,system
 alsa-firmware,alsa firmware,system
 pulseaudio,sound server,system
 pulseaudio-equalizer,equalizer for PA,system
 pulseaudio-alsa,alsa confs for PA,system
-xf86-input-keyboard,keyboard drivers,system
-xf86-input-synaptics,touchpad drivers,system
-xf86-input-mouse,mouse drivers,system
 xf86-input-libinput,more drivers,system
 xf86-video-intel,graphics drivers,system
 mesa,opengl implementation,system
 iw,wireless config,system
 wpa_supplicant,key negotiation for WPA,system
 dialog,dialog boxes,system
-mlocate,locate search,system
+ifplugd,wired auto connection,system
 xorg-server,x server,desktop
 xorg-xinit,xinit,desktop
-w3m,cli web browser,desktop
+xorg-xbacklight,backlight,desktop
+xclip,clipboard manager,desktop
 arandr,xrander frontend,desktop
+xdotool,insert keys to X,desktop
 i3-gaps,window manager,desktop
-dmenu,generic menu for x,desktop
+i3blocks,blocks,desktop
+i3lock,screen locker,desktop
+i3status,status bar,desktop
+sxhkd,keys,desktop
+unclutter,no mouse,desktop
+dunst,notification script,desktop
+dmenu,generic menu for X,desktop
 rofi,dmenu replacement,desktop
 zathura,document viewer,desktop
 zathura-pdf-mupdf,mupdf backend for zathura,desktop
 zathura-djvu,djvu support for zathura,desktop
-sdcv,stardict frontend,desktop
-translate-shell,google translate client,desktop
-mpd,music player daemon,desktop
-ncmpcpp,mpd client,desktop
-mpc,mpc client,desktop
-feh,image viewer and wp setter,desktop
-sxiv,image viewer,desktop
-scrot,screenshoter,desktop
-gimp,image manipulator,desktop
-newsboat,rss reader,desktop
-calcurse,todo list and appointements,desktop
 libreoffice,office suite,desktop
+firefox,browser,desktop
+gimp,image manipulation tool,desktop
+mpd,music player daemon,cli
+ncmpcpp,mpd client,cli
+mpc,mpc client,cli
+youtube-dl,video downloader,cli
+feh,image viewer and wp setter,cli
+sxiv,image viewer,cli
+scrot,screenshoter,cli
+figlet,text magic tool,cli
+sdcv,stardict frontend,cli
+translate-shell,google translate client,cli
+aspell,spell checking,cli
+aspell-en,spell checking english,cli
+w3m,cli web browser,cli
+surfraw,search engine,cli
+newsboat,rss reader,cli
+neomutt,mail client,cli
+rtv,reddit client,cli
+calcurse,todo list and appointements,cli
+abook,address book,cli
+tree,list files,cli
+atool,archive management,cli
+rclone,backup utility,cli
+rsync,backup utility,cli
+pass,password manager,cli
+transmission,torrent downloaded,cli
+mlocate,locate search,cli
+entr,file watcher,cli
+lsof,ps using file,cli
+docx2txt,docx to txt,cli
+ffmpegthumbnailer,thumbnails,cli
+odt2txt,odt to txt,cli
+imagemagick,image manipulation,cli
 code,visual studio code,code
 zeal,documentation,code
+jq,json parser,code
+ripgrep,code search,code
+bat,cat alternative,code
+fzf,fuzzy finder,code
+httpie,http client,code
+hugo,SSG,code
+yarn,node package manager,code
+python-pip,python pip,code
+virtualbox,hypervisor,code
+virtualbox-host-modules-arch,hypervisor tools,code
+vagrant,vm frontend,code
+ansible,config management,code
+podman,containers,code
+noto-fonts-emoji,noto font,font
+ttf-dejavu,dejavu font,font
+ttf-droid,droid font,font
+ttf-powerline,powerline,font
+ttf-font-awesome,awesome,font
+ttf-liberation,liberation,font
+yay,mounting drives,aur
+brave-bin,browser,aur
+task-spooler,task quee,aur
+urlview,cli url viewer,aur
+transmission-cli,curses transmission client,aur
+brave-bin,browser,aur

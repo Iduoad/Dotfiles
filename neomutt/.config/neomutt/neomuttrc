@@ -25,7 +25,7 @@ set trash = "+[GMail]/Trash" #Location of trash
 set record = "+[GMail]/Sent" #Location of sent
 
 # send options
-set smtp_url = "smtps://m.iduoad@gmail.com@smtp.uit.ac.ma:587"
+set smtp_url = "smtps://m.iduoad@gmail.com:587"
 set smtp_pass = $my_pass
 set from = "m.iduoad@gmail.com"
 
