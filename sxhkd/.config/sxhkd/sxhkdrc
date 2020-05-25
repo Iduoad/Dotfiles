@@ -2,12 +2,12 @@ super + Return
 	$TERMINAL
 super + shift + Return
 	$TERMINAL -e tmux
+
+# lower case hot keys
 super + d
 	rofi -show run
-super + shift + f
-	firefox -private-window
-super + i
-	$TERMINAL -e htop
+super + e
+    rofi-emoji
 super + m
 	$TERMINAL -e ncmpcpp
 super + n
@@ -16,88 +16,94 @@ super + r
 	$TERMINAL -e $FILE
 super + t
 	$TERMINAL -e transmission-remote-cli
-super + y
-	$TERMINAL -e calcurse -D ~/.config/calcurse
+super + v
+	$TERMINAL -e virtualbox
 
+# upper case hot keys
 super + shift + b
-    qutebrowser
-super + shift + e
-	$BROWSER
-super + shift + g
-	gimp
-super + shift + v
-	virtualbox
-super + shift + z
-	zeal
-
+    brave
 super + shift + d
 	rofi-library
-
-super + e
-    rofi-emoji
+super + shift + e
+	$BROWSER
+super + shift + f
+	firefox -private-window
+super + shift + i
+	$TERMINAL -e htop
+super + shift + g
+	gimp
+super + shift + u
+	zeal
+super + shift + v
+	virtualbox
 
 super + shift + m
 	audioctl mute
+
 super + shift + w
 	rofi-radio
 
-super + x
-	mpc pause; pauseallmpv; lock
 super + shift + x
-	prompt "Shutdown computer?" "sudo -A shutdown -h now"
+	mpc pause; pauseallmpv; betterlockscreen -l dim
 super + shift + BackSpace
-	prompt "Reboot computer?" "sudo -A shutdown -r now"
+	lock
 Print
-    scrot -e 'mv $f ~/Pictures'
+    shotgun -f png "$HOME/Pictures/$(date +%Y-%m-%d-%H%M%S).png"
+shift + Print
+    shotgun -f png $(slop -f "-i %i -g %g") "$HOME/Pictures/$(date +%Y-%m-%d-%H%M%S).png"
+control + Print
+    shotgun -f png - | xclip -t 'image/png' -selection clipboard
+control + shift + Print
+    shotgun -f png $(slop -f "-i %i -g %g") - | xclip -t 'image/png' -selection clipboard
 
 XF86Launch1
 	xset dpms force off
-# XF86AudioMute
-# 	audioctl mute
-# XF86AudioLowerVolume
-# 	audioctl down 5
-# shift+XF86AudioLowerVolume
-# 	audioctl down 10
-# control+XF86AudioLowerVolume
-# 	audioctl down 1
-# XF86AudioRaiseVolume
-# 	audioctl up 5
-# shift+XF86AudioRaiseVolume
-# 	audioctl up 10
-# control+XF86AudioRaiseVolume
-# 	audioctl up 1
-# XF86AudioNext
-# 	audioctl next
-# XF86AudioPlay
-# 	audioctl toggle
-# XF86AudioPrev
-# 	audioctl prev
-# XF86AudioStop
-# 	audioctl toggle
-# XF86MonBrightnessDown
-# 	xbacklight -dec 15
-# XF86MonBrightnessUp
-# 	xbacklight -inc 15
+XF86AudioMute
+	audioctl mute
+XF86AudioLowerVolume
+	audioctl down 5
+shift+XF86AudioLowerVolume
+	audioctl down 10
+control+XF86AudioLowerVolume
+	audioctl down 1
+XF86AudioRaiseVolume
+	audioctl up 5
+shift+XF86AudioRaiseVolume
+	audioctl up 10
+control+XF86AudioRaiseVolume
+	audioctl up 1
+XF86AudioNext
+	audioctl next
+XF86AudioPlay
+	audioctl toggle
+XF86AudioPrev
+	audioctl prev
+XF86AudioStop
+	audioctl toggle
+XF86MonBrightnessDown
+	xbacklight -dec 15
+XF86MonBrightnessUp
+	xbacklight -inc 15
 
 # Pause audio
-# super + {_,shift +} p
-# 	audioctl {toggle,pause}
-# # Changes to next/previous tracks
-# super + {comma,period}
-# 	audioctl {prev,next}
+super + {_,shift +} p
+ 	audioctl {toggle,pause}
+# Changes to next/previous tracks
+super + {comma,period}
+ 	audioctl {prev,next}
 # # Restart track
-# super + shift + less
-# 	audioctl replay
+super + shift + less
+	audioctl replay
 # Increase volume
 
-# super + {equal,plus}
-# 	audioctl up {5,15}
+super + {equal,plus}
+	audioctl up {5,15}
 # # Decrease volume
-# super {_,shift +} + minus
-# 	audioctl down {5,15}
+super {_,shift +} + minus
+	audioctl down {5,15}
 # # Seek foward in song
-# super + {_,shift +} bracketright
-# 	audioctl forward {10,120}
+super + {_,shift +} bracketright
+	audioctl forward {10,120}
 # # Seek backward in song
-# super + {_,shift +} bracketleft
-# 	audioctl back {10,120}
+super + {_,shift +} bracketleft
+	audioctl back {10,120}

@@ -23,6 +23,33 @@ docs() {
     fi
 }
 
+dotfiles() {
+    DOTFILES_FOLDER="$HOME/dotfiles"
+    line=$(find $DOTFILES_FOLDER -type f | grep -v ".git" | rofi -dmenu -columns 1 -i -p Dotfiles)
+    if [ -z $line ]; then
+        exit 0
+    else
+        result=${line}
+        st -c Library -e vim "$result"
+    fi
+}
+
+articles() {
+    ARTICLES_FOLDER="$HOME/Work/blog/content/"
+    line=$(find $ARTICLES_FOLDER -type f -regex ".*\.md" | rofi -dmenu -columns 1 -i -p Articles)
+    if [ -z $line ]; then
+        exit 0
+    else
+        result=${line}
+        st -c Library -e vim "$result"
+    fi
+}
+
+search_engine() {
+    BROWSER=firefox
+    surfraw -browser=$BROWSER $(sr -elvi | awk -F'-' '{print $1}' | sed '/:/d' | awk '{$1=$1};1' | rofi -kb-row-select "Tab" -kb-row-tab "Control+space" -dmenu  -i -p "rofi-surfraw-websearch: ")
+}
+
 LIBRARY_FILE="$HOME/.local/share/rofi/library.txt"
 LIBRARY_FOLDER="$DOCS/notes"
 
@@ -34,16 +61,24 @@ else
 
     if [ $result = "todo" ]; then
         st -c Library -e calcurse & disown
+    elif [ $result = "dotfiles" ]; then
+        dotfiles
     elif [ $result = "calc" ]; then
         st -c Library -e python -ic "from math import *; import cmath" & disown
     elif [ $result = "arch" ]; then
-        st -c Library -e ranger "/usr/share/doc/arch-wiki/html/en" & disown
+        st -c Library -e $FILE "/usr/share/doc/arch-wiki/html/en" & disown
     elif [ $result = "temp" ]; then
         st -c Library -e vim "/tmp/thinkering.md" & disown
     elif [ $result = "books" ]; then
         books
     elif [ $result = "docs" ]; then
         docs
+    elif [ $result = "articles" ]; then
+        articles
+    elif [ $result = "se" ]; then
+        search_engine
+    elif [ $result = "pass" ]; then
+        passmenu
     elif [ -z $result ]; then
         exit 0
     else
@@ -51,5 +86,3 @@ else
         st -c Library -e vim $result & disown
     fi
 fi
-
-

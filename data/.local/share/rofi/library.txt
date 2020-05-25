@@ -1,11 +1,10 @@
-⁉️ Learnt: my own stackoverflow-learnt.md
-📱 My apps: apps to try-install.md
-📖 Notes: notes about talks and videos-notes.json
-🎥 Reviews: movie and book reviews-reviews.json
-📜 Scripts: script todo list and -scripts.md
+❎ Todo: my todo and appts-todo
+🕸 Search Engine: search the web-se
+🔒 Passwords: password manager-pass
 🔢 Calculator: a python calculator-calc
+🧮 Dotfiles: my dotfiles-dotfiles
+✍ Articles: Blog articles-articles
 🐧 Arch Wiki: offline arch wiki-arch
 🕰️ Temporary: open a temporary file-temp
-❎ Todo: my todo and appts-todo
 📚 Docs: documentation and cheatsheets-docs
 📖 Books: books and articles to read-books

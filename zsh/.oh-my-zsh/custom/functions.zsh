@@ -63,3 +63,16 @@ se () {
     esac
     $EDITOR $(du -a $dir | awk '{print $2}' | grep -vi "node_module\|git\|.png\|jpeg\|jpg\|font" | fzf)
 }
+
+function mcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+
+function subtitle () {
+    movie_folder=$PWD
+    cd $HOME/Desktop/subliminal
+    pipenv run subliminal download "$@" -d $movie_folder
+    cd -
+}
+
+function kebab () {
+    echo "$@" | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -s '[:space:]' | tr ' ' '-'
+}

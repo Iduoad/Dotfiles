@@ -9,7 +9,8 @@ wget,downloader,core
 zip,zip,core
 unzip,unzip,core
 unrar,unrar,core
-intel-ucode,intel microcode,system
+rsync,file copier,core
+
 linux-firmware,linux firmware,system
 ntfs-3g,ntfs drivers,system
 exfat-utils,exfat drivers,system
@@ -26,6 +27,7 @@ mesa,opengl implementation,system
 iw,wireless config,system
 wpa_supplicant,key negotiation for WPA,system
 dialog,dialog boxes,system
+
 ifplugd,wired auto connection,system
 xorg-server,x server,desktop
 xorg-xinit,xinit,desktop
@@ -48,6 +50,7 @@ zathura-djvu,djvu support for zathura,desktop
 libreoffice,office suite,desktop
 firefox,browser,desktop
 gimp,image manipulation tool,desktop
+
 mpd,music player daemon,cli
 ncmpcpp,mpd client,cli
 mpc,mpc client,cli
@@ -72,7 +75,7 @@ atool,archive management,cli
 rclone,backup utility,cli
 rsync,backup utility,cli
 pass,password manager,cli
-transmission,torrent downloaded,cli
+transmission-cli,torrent downloaded,cli
 mlocate,locate search,cli
 entr,file watcher,cli
 lsof,ps using file,cli
@@ -80,6 +83,7 @@ docx2txt,docx to txt,cli
 ffmpegthumbnailer,thumbnails,cli
 odt2txt,odt to txt,cli
 imagemagick,image manipulation,cli
+
 code,visual studio code,code
 zeal,documentation,code
 jq,json parser,code
@@ -95,15 +99,18 @@ virtualbox-host-modules-arch,hypervisor tools,code
 vagrant,vm frontend,code
 ansible,config management,code
 podman,containers,code
+
 noto-fonts-emoji,noto font,font
 ttf-dejavu,dejavu font,font
 ttf-droid,droid font,font
 ttf-powerline,powerline,font
 ttf-font-awesome,awesome,font
 ttf-liberation,liberation,font
+
 yay,mounting drives,aur
 brave-bin,browser,aur
 task-spooler,task quee,aur
 urlview,cli url viewer,aur
 transmission-cli,curses transmission client,aur
 brave-bin,browser,aur
+entr,watch files,aur

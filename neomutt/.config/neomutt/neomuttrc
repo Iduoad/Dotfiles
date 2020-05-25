@@ -11,7 +11,7 @@ set message_cachedir = "~/.cache/mutt/bodies"
 set mailcap_path = "~/.local/share/mutt/mailcap"
 
 # variables
-set my_pass = `pass gmail.com/m.iduoad@gmail.com`
+set my_pass = `pass mail/m.iduoad@gmail.com`
 
 # recieve options
 set imap_user = "m.iduoad@gmail.com"

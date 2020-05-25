@@ -4,7 +4,7 @@
 hide_edge_borders both
 for_window [class="^.*"] border pixel 3
 font pango:DejaVu Sans Mono, Awesome 9
-set $term --no-startup-id $TERMINAL
+set $term $TERMINAL
 set $browser --no-startup-id $BROWSER
 
 set $mod Mod4
@@ -37,7 +37,7 @@ bindsym $mod+Shift+z		gaps outer current minus 5
 bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
 bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
 bindsym $mod+Shift+r		restart
-bindsym $mod+Shift+BackSpace		exec lock
+# bindsym $mod+Shift+BackSpace		exec betterlockscreen -l dim
 
 #STOP/HIDE EVERYTHING:
 bindsym $mod+Shift+Delete	exec --no-startup-id audioctl truemute ; exec --no-startup-id audioctl pause ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e $files
@@ -82,28 +82,28 @@ bindsym $mod+Shift+slash	kill
 bindsym $mod+backslash		workspace back_and_forth
 
 # Programs
-bindsym $mod+Return exec $term
-bindsym $mod+Shift+Return exec --no-startup-id $term -e tmux
-bindsym $mod+Shift+b exec --no-startup-id qutebrowser
-bindsym $mod+d exec rofi -show run
-bindsym $mod+Shift+e exec --no-startup-id $browser
-bindsym $mod+Shift+f exec --no-startup-id firefox -private-window
-bindsym $mod+Shift+g exec --no-startup-id gimp
-bindsym $mod+Shift+i exec --no-startup-id $term -e htop
-bindsym $mod+m exec --no-startup-id $term -e ncmpcpp
-bindsym $mod+n exec --no-startup-id $term -e newsboat
-bindsym $mod+r exec --no-startup-id $term -e $FILE
-bindsym $mod+t exec --no-startup-id $term -e transmition-remote-cli
-bindsym $mod+v exec --no-startup-id virtualbox
-bindsym $mod+Shift+y exec --no-startup-id $term -e calcurse
-bindsym $mod+Shift+u exec --no-startup-id zeal
-bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures'
+# bindsym $mod+Return exec $term
+# bindsym $mod+Shift+Return exec --no-startup-id $term -e tmux
+# bindsym $mod+Shift+b exec --no-startup-id qutebrowser
+# bindsym $mod+d exec rofi -show run
+# bindsym $mod+Shift+e exec --no-startup-id $browser
+# bindsym $mod+Shift+f exec --no-startup-id firefox -private-window
+# bindsym $mod+Shift+g exec --no-startup-id gimp
+# bindsym $mod+Shift+i exec $term -e htop
+# bindsym $mod+m exec $term -e ncmpcpp
+# bindsym $mod+n exec $term -e newsboat
+# bindsym $mod+r exec $term -e $FILE
+# bindsym $mod+t exec $term -e transmition-remote-cli
+# bindsym $mod+v exec --no-startup-id virtualbox
+# bindsym $mod+Shift+y exec --no-startup-id $term -e calcurse
+# bindsym $mod+Shift+u exec --no-startup-id zeal
+# bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures'
 
 # scripts
-bindsym $mod+Shift+d exec --no-startup-id rofi-library
-bindsym $mod+e exec --no-startup-id rofi-emoji
-bindsym $mod+Shift+m exec --no-startup-id audioctl mute
-bindsym $mod+Shift+x exec --no-startup-id mpc pause; exec pauseallmpv; exec lock
+# bindsym $mod+Shift+d exec --no-startup-id rofi-library
+# bindsym $mod+e exec --no-startup-id rofi-emoji
+# bindsym $mod+Shift+m exec --no-startup-id audioctl mute
+# bindsym $mod+Shift+x exec --no-startup-id mpc pause; exec pauseallmpv; exec lock
 
 #-Workspaces-#
 set $ws1 "1"
@@ -143,33 +143,33 @@ bindsym $mod+Shift+0	move container to workspace $ws10
 
 #-mpc-#
 #change volume
-bindsym XF86AudioRaiseVolume exec audioctl up 5
-bindsym XF86AudioLowerVolume exec audioctl down 5
-bindsym XF86AudioMute exec audioctl mute
-bindsym Shift+XF86AudioRaiseVolume exec audioctl up 10
-bindsym Shift+XF86AudioLowerVolume exec audioctl down 10
-bindsym Ctrl+XF86AudioRaiseVolume exec audioctl up 1
-bindsym Ctrl+XF86AudioLowerVolume exec audioctl down 1
+# bindsym XF86AudioRaiseVolume exec audioctl up 5
+# bindsym XF86AudioLowerVolume exec audioctl down 5
+# bindsym XF86AudioMute exec audioctl mute
+# bindsym Shift+XF86AudioRaiseVolume exec audioctl up 10
+# bindsym Shift+XF86AudioLowerVolume exec audioctl down 10
+# bindsym Ctrl+XF86AudioRaiseVolume exec audioctl up 1
+# bindsym Ctrl+XF86AudioLowerVolume exec audioctl down 1
 
-bindsym $mod+plus exec audioctl up 5
-bindsym $mod+minus exec audioctl down 5
-bindsym $mod+Shift+plus exec audioctl up 10
-bindsym $mod+Shift+minus exec audioctl down 10
-bindsym $mod+Ctrl+plus exec audioctl up 1
-bindsym $mod+Ctrl+minus exec audioctl down 1
+# bindsym $mod+plus exec audioctl up 5
+# bindsym $mod+minus exec audioctl down 5
+# bindsym $mod+Shift+plus exec audioctl up 10
+# bindsym $mod+Shift+minus exec audioctl down 10
+# bindsym $mod+Ctrl+plus exec audioctl up 1
+# bindsym $mod+Ctrl+minus exec audioctl down 1
 
 # music control
-bindsym XF86AudioNext exec audioctl next
-bindsym XF86AudioPrev exec audioctl prev
-bindsym XF86AudioPlay exec audioctl toggle
-bindsym XF86AudioStop exec audioctl toggle
+# bindsym XF86AudioNext exec audioctl next
+# bindsym XF86AudioPrev exec audioctl prev
+# bindsym XF86AudioPlay exec audioctl toggle
+# bindsym XF86AudioStop exec audioctl toggle
+#
+# bindsym $mod+period exec audioctl next
+# bindsym $mod+comma exec audioctl prev
+# bindsym $mod+p exec audioctl toggle
 
-bindsym $mod+period exec audioctl next
-bindsym $mod+comma exec audioctl prev
-bindsym $mod+p exec audioctl toggle
-
-bindsym $mod+bracketright exec audioctl forward {10,120}
-bindsym $mod+bracketleft exec audioctl back {10,120}
+# bindsym $mod+bracketright exec audioctl forward {10,120}
+# bindsym $mod+bracketleft exec audioctl back {10,120}
 
 # #---Arrow Keys---# #
 bindsym $mod+Left		focus left
@@ -206,7 +206,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3blocks
+        status_command i3status
         position top
         font pango:monospace, Awesome 9
         mode hide

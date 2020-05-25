@@ -31,7 +31,12 @@ done
 echo "$filename"
 if [[ -f $filename ]]; then
     cp "$filename" "$HOME/.config/wall.png"
-    [[ $color == true ]] && wal -i $filename || feh --bg-scale $filename && wal -R
+
+    if [[ $color == true ]]; then
+        wal -i $filename
+    else
+        xwallpaper --zoom "${filename}" && wal -R
+    fi
 else
     [[ $ligh_theme == true ]] && wal --theme random_light || wal --theme random
 fi

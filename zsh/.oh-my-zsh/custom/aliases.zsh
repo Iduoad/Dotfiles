@@ -2,10 +2,15 @@
 
 ### Generic programs shortcuts: ###
 alias a="calcurse -a -t"
-alias email="thunderbird -ProfileManager"
+# alias email="thunderbird -ProfileManager"
+alias email="neomutt"
 alias nf="clear && neofetch"
 alias td="transmission-daemon"
-alias trc="transmission-remote-cli"
+alias trc="tremc"
+alias docker="podman"
+alias k="kubectl"
+alias hs="hugo server -Dw"
+
 
 ### command-improved ###
 alias mkdir="mkdir -pv"
@@ -13,6 +18,13 @@ alias du='du -kh'
 alias df='df -kTh'
 alias free='free -h'
 alias cal='cal -3m'
+alias vim='nvim'
+alias tmux='tmux -f "$XDG_CONFIG_HOME"/tmux/tmux.conf'
+
+alias calcurse='calcurse -C "$XDG_CONFIG_HOME"/calcurse -D "$XDG_DATA_HOME"/calcurse'
+
+alias gpg='gpg --homedir "$XDG_DATA_HOME"/gnupg'
+alias gpg2='gpg'
 # alias date='date "+%A, %B %d, %Y [%T]"'
 alias walrand='wal --theme random && echo -e "colors = $(cat ~/.cache/wal/colors.json)" > ~/.config/browser/colors.json'
 alias walrandl='wal --theme random_light && echo -e "colors = $(cat ~/.cache/wal/colors.json)" > ~/.config/browser/colors.json'

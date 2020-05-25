@@ -1,5 +1,15 @@
-# Dark theme.
-rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+rofi.show-icons:            true
+rofi.modi:                  drun,run,window,ssh
+rofi.lines:                 10
+rofi.line-padding:          14
+rofi.matching:              normal
+rofi.bw:                    0
+rofi.padding:               0
+rofi.separator-style:       none
+rofi.hide-scrollbar:        true
+rofi.line-margin:           0
+rofi.columns:               1
+rofi.font:                  Fira Code 10
 
-# Light theme.
-# rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
+/* rofi.theme: /usr/share/rofi/themes/Arc.rasi */
+rofi.theme: .cache/wal/colors-rofi-light.rasi

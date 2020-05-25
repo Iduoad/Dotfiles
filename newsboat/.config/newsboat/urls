@@ -10,47 +10,66 @@ https://www.sudosatirical.com/articles/index.xml
 
 ---------------News---------------
 # Blogs
-http://feeds.reuters.com/reuters/AFRICAWorldNews "World-News"
-https://www.fossmint.com/feed/ "Linux-News"
-https://itsfoss.com/feed/ "Linux-News"
+http://feeds.reuters.com/Reuters/worldNews "World-News"
+https://www.moroccoworldnews.com/rss "World-News"
+https://news.ycombinator.com/rss "Tech-News"
 
+---------------Linux&Tech----------
 https://www.phoronix.com/rss.php "Linux-News"
 https://lwn.net/headlines/rss "Linux-News"
 http://lxer.com/module/newswire/headlines.rss "Linux-News"
+https://www.fossmint.com/feed/ "Linux-News"
+https://itsfoss.com/feed/ "Linux-News"
+https://thenewstack.io/rss "Tech-News"`
 
-thenewstack.io/blog/feed/ "Tech-News"
-
-https://feeds.feedburner.com/DailyTechHeadlines "~Podcast -- DailyTechHeadlines" "Linux-Podcasts"
-https://feeds.fireside.fm/linuxheadlines/rss "~Podcast -- Linux Headlines" "Linux-Podcasts"
-
-# Reddit
 ---------------Reddit---------------
-https://www.reddit.com/r/soccer/.rss "~Reddit -- Soccer" "sport"
-https://www.reddit.com/r/juve/.rss "~Reddit -- Juventus" "sport"
-
 https://www.reddit.com/r/selfhosted/.rss "~Reddit -- Self Hosted" "Hacking-Code"
 https://www.reddit.com/r/sysadmin/.rss "~Reddit -- Sysadmin" "Hacking-Code"
+https://www.reddit.com/r/devops/.rss "~Reddit -- Devops" "Linux-News"
+https://www.reddit.com/r/linuxadmin/.rss "~Reddit -- LinuxAdmin" "Linux-News"
 
 https://www.reddit.com/r/linux/.rss "~Reddit -- Linux" "Linux-News"
+https://www.reddit.com/r/kubernetes/.rss "~Reddit -- Kubernetes" "Linux-News"
+https://www.reddit.com/r/docker/.rss "~Reddit -- Docker" "Linux-News"
+https://www.reddit.com/r/golang/.rss "~Reddit -- Golang" "Linux-News"
 https://www.reddit.com/r/technology/.rss "~Reddit -- Technology" "Tech-News"
-https://news.ycombinator.com/rss "~News -- YC Hacker News" "Tech-News"
 
+https://www.reddit.com/r/soccer/.rss "~Reddit -- Soccer" "sport"
+https://www.reddit.com/r/juve/.rss "~Reddit -- Juventus" "sport"
+https://mail-archives.apache.org/mod_mbox/guacamole-user/?format=atom "~Guacamole Mail list"
 ---------------Youtube---------------
 # Youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCBJeMCIeLQos7wacox4hmLQ "~Youtube -- Serie A" "sport"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCTv-XvfzLX3i4IGWAm4sbmA "~Youtube -- La Liga" "sport"
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCSAUGyc_xA8uYzaIVG6MESQ "~Youtube -- nigahiga" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCqa2MPu8bLY1PwVFUpSyVhQ "~Youtube -- Hiho Kids" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCJjSDX-jUChzOEyok9XYRJQ "~Youtube -- Jubilee" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCHEf6T_gVq4tlW5i91ESiWg "~Youtube -- React" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbaGn5VkOVlcRgIWAHcrJKA "~Youtube -- watchcut" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCdC0An4ZPNr_YiFiYoVbwaw "~Youtube -- Daily Dose of Internet" "fun"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzNcnIeuGLXR4uAsJ6cP3kw "~Youtube -- Najib Mokhtari" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHr_zjenUjU7G1NXegSMHPg "~Youtube -- Marouane Lamharzi" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCMPBiSwYY4fS1LYw4KkDZuw "~Youtube -- Mustapha Swinga" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCB1O3eA-OwSIkYjQMzFtnLg "~Youtube -- 1D2C" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCQ9azoLKt090h4ZSyUGHh-w "~Youtube -- Youssef Halim" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVlqGg1WZjfwz5JPJ5cPF9g "~Youtube -- Tajriba" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzeYUQ4vkuEvEF3SCXLkxHA "~Youtube -- Radix" "fun"
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UC-4KnPMmZzwAzW7SbVATUZQ "~Youtube -- AJ+ Arabic" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCB1O3eA-OwSIkYjQMzFtnLg "~Youtube -- 1D2C" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCWQhT_gni7EIKEpfd5tEGtQ "~Youtube -- Zoz Vlogs" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC07e1ZK4KWoDWnCN-z6VUiA "~Youtube -- Espitalia" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCwiCyswBHPe50z7yGkDSDqw "~Youtube -- Film Gamed" "fun"
 
+https://www.youtube.com/feeds/videos.xml?channel_id=UCWQhT_gni7EIKEpfd5tEGtQ "~Youtube -- Zoz Vlogs" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXPUbf7aTmoIXFpsqdmaJ3w "~Youtube -- KOULCHI" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJCVxCW1dzEvFnzqDUU498g "~Youtube -- BIMO" "fun"
+
+https://www.youtube.com/feeds/videos.xml?channel_id=UCBJeMCIeLQos7wacox4hmLQ "~Youtube -- Serie A" "sport"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCTv-XvfzLX3i4IGWAm4sbmA "~Youtube -- La Liga" "sport"
 ---------------Podcasts---------------
 # Podcasts
+https://feeds.feedburner.com/DailyTechHeadlines "~Podcast -- DailyTechHeadlines" "Linux-Podcasts"
+https://feeds.fireside.fm/linuxheadlines/rss "~Podcast -- Linux Headlines" "Linux-Podcasts"
+http://feeds.soundcloud.com/users/soundcloud:users:107605642/sounds.rss "~Podcast -- The Newstackmakers"
+
 https://www.youtube.com/feeds/videos.xml?channel_id=UCNbqa_9xihC8yaV2o6dlsUg "~Podcast -- Security Now" "Linux-Podcasts"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCagoIYmo_gO1iVaCeeSikEg "~Podcast -- This Week In Tech" "Linux-Podcasts"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCmyGZ0689ODyReHw3rsKLtQ "~Podcast -- TuxDigital" "Linux-Podcasts"
@@ -65,6 +84,9 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCk9NvmsPBC3lTn_L9kFaylA "~Y
 https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~Youtube -- gotbletu" "Linux-Videos"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Youtube -- Luke Smith" "Linux-Videos"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "~Youtube -- DistroTube" "Linux-Videos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCxQKHvKbmSzGMvUrVtJYnUA "~Youtube -- LearnLinuxTV" "Linux-Videos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "~Youtube -- Brodie Robertson" "Linux-Videos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCjr2bPAyPV7t35MvcgT3W8Q "~Youtube -- The Hated one" "Linux-Videos"
 
 # https://www.youtube.com/feeds/videos.xml?channel_id=UCa1zuotKU4Weuw_fLRnPv0A "Linux-Videos" vue mastery
 # https://www.youtube.com/feeds/videos.xml?channel_id=UCrUL8K81R4VBzm-KOYwrcxQ "~Youtube -- Engineer Man" "Linux-Videos"

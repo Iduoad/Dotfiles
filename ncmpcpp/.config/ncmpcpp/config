@@ -1,7 +1,7 @@
 
-ncmpcpp_directory = ~/.ncmpcpp
+ncmpcpp_directory = ~/.config/ncmpcpp
 #
-lyrics_directory = ~/.ncmpcpp/lyrics
+lyrics_directory = ~/.config/ncmpcpp/lyrics
 #
 mpd_host = localhost
 #
