@@ -1,3 +1,54 @@
+#--- WM binding
+super + shift + {Escape, r}
+    bspc {quit, wm -r}
+
+super + q
+    xdo close
+
+super + space
+    bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
+
+super + f
+    bspc node -t \~fullscreen
+
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+super + shift + {h,j,k,l}
+	bsp-resize {left,down,up,right}
+
+super + control + {h,j,k,l}
+    euclid_mover {west, south, north, east}
+
+super + {0-9}
+	bspc desktop -f {0-9}
+
+super + shift + {0-9}
+  bspc node -d {0-9}
+
+super + control + {0-9}
+  bspc node -d {0-9} && bspc desktop -f {0-9}
+
+super + control + {Right, Left}
+  bspc node @parent -C {forward, backward}
+
+super + {g, semicolon}
+  bspc desktop -f {prev, next}
+
+super + shift + {g, semicolon}
+  bspc node -d {prev, next}
+
+super + Tab
+	bspc desktop -f last
+
+super + a
+    bspc config window_gap $(( $(bspc config window_gap) + 10))
+
+super + shift + a
+    bspc config window_gap 10
+
+#--- Programs Bindings
+
 super + Return
 	$TERMINAL
 super + shift + Return
