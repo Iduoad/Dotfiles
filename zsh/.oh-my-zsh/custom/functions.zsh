@@ -76,3 +76,11 @@ function subtitle () {
 function kebab () {
     echo "$@" | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | tr -s '[:space:]' | tr ' ' '-'
 }
+
+function subtitler() {
+    filename="$@"
+    touch "$filename"
+    subtitle -l en $filename
+    rm $filename
+}
+

@@ -4,6 +4,7 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 " Plug 'posva/vim-vue'
 Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'tomtom/tcomment_vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plugin 'nathanaelkane/vim-indent-guides' "Add visual indicators if indent
 " Theming
 Plug 'dylanaraps/wal.vim'
@@ -69,7 +70,6 @@ call plug#end()
 " Run xrdb whenever Xdefaults or Xresources are updated.
   autocmd BufWritePost ~/.Xresources,~/.Xdefaults !xrdb %
 
-
 """""""""""""""""""Key mappings"""""""""""""
 " fold Keymaps
   "inoremap \ <C-O>za
@@ -97,9 +97,13 @@ call plug#end()
 " spell checking
   map <leader>e :setlocal spell! spelllang=en_us<CR>
   map <leader>f :set spelllang=fr_cm<CR>
+  map <leader>a :set arabic!<CR>
 
-" General ket mappings
+" General key mappings
   map <C-s> :source ~/.config/nvim/init.vim<CR>
+
+" Go to the next anchor <!!>
+  map <leader>n :/<!!>/<CR> caw
 
 """""""""""""""""""Plugins mappings"""""""""""""
 " GOYO
