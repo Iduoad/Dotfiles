@@ -30,7 +30,7 @@ dotfiles() {
         exit 0
     else
         result=${line}
-        st -c Library -e vim "$result"
+        st -c Library -e nvim "$result"
     fi
 }
 
@@ -41,7 +41,7 @@ articles() {
         exit 0
     else
         result=${line}
-        st -c Library -e vim "$result"
+        st -c Library -e nvim "$result"
     fi
 }
 
@@ -54,7 +54,13 @@ LIBRARY_FILE="$HOME/.local/share/rofi/library.txt"
 LIBRARY_FOLDER="$DOCS/notes"
 
 if ps -aux | grep "[L]ibrary" > /dev/null; then
-    i3-msg 'scratchpad show'
+    # i3-msg 'scratchpad show'
+    id=$(xdotool search --class Library)
+
+    if [ "$id" != "" ]
+     then
+      bspc node "$id" --flag hidden -f
+    fi
 else
     line=$(cat $LIBRARY_FILE | rofi -dmenu -i -p Library)
     result=$(echo "$line" | cut -f2 -d'-')
@@ -68,7 +74,7 @@ else
     elif [ $result = "arch" ]; then
         st -c Library -e $FILE "/usr/share/doc/arch-wiki/html/en" & disown
     elif [ $result = "temp" ]; then
-        st -c Library -e vim "/tmp/thinkering.md" & disown
+        st -c Library -e nvim "/tmp/thinkering.md" & disown
     elif [ $result = "books" ]; then
         books
     elif [ $result = "docs" ]; then
@@ -83,6 +89,6 @@ else
         exit 0
     else
         result="${LIBRARY_FOLDER}/${result}"
-        st -c Library -e vim $result & disown
+        st -c Library -e nvim $result & disown
     fi
 fi
