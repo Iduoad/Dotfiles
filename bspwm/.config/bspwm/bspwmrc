@@ -13,10 +13,6 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 0
 ###---Global Settings---###
 bspc config automatic_scheme alternate
 bspc config initial_polarity second_child
-bspc config pointer_modifier lock
-bspc config pointer_action1 move
-bspc config pointer_action2 resize_side
-bspc config pointer_action3 resize_corner
 bspc config click_to_focus none
 
 bspc config focus_follows_pointer true
@@ -37,6 +33,13 @@ bspc config left_padding 0
 bspc config right_padding 0
 bspc config border_width 2
 bspc config window_gap 10
+
+###---Mouse Settings---###
+bspc config pointer_modifier mod4
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action3 resize_corner
+
 
 ###---Rules---###
 SCREEN_WIDTH=$(xrandr --current | grep '*' | uniq | awk '{print $1}' | cut -d 'x' -f1)

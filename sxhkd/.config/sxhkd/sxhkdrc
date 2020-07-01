@@ -1,6 +1,9 @@
 #--- WM binding
-super + shift + {Escape, r}
-    bspc {quit, wm -r}
+super + shift + Escape
+    bspc quit
+
+super + shift + r
+    wm -r
 
 super + q
     xdo close
@@ -9,13 +12,16 @@ super + space
     bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
 
 super + f
-    bspc node -t \~fullscreen
+    bsp-fullscreen
 
 super + {h,j,k,l}
 	bspc node -f {west,south,north,east}
 
 super + shift + {h,j,k,l}
 	bsp-resize {left,down,up,right}
+
+super + {u,i}
+	bspc node focused.floating -z top_left {10 10,-10 -10}
 
 super + control + {h,j,k,l}
     euclid_mover {west, south, north, east}
@@ -24,19 +30,19 @@ super + {0-9}
 	bspc desktop -f {0-9}
 
 super + shift + {0-9}
-  bspc node -d {0-9}
+    bspc node -d {0-9}
 
 super + control + {0-9}
-  bspc node -d {0-9} && bspc desktop -f {0-9}
+    bspc node -d {0-9} && bspc desktop -f {0-9}
 
 super + control + {Right, Left}
-  bspc node @parent -C {forward, backward}
+    bspc node @parent -C {forward, backward}
 
 super + {g, semicolon}
-  bspc desktop -f {prev, next}
+    bspc desktop -f {prev, next}
 
 super + shift + {g, semicolon}
-  bspc node -d {prev, next}
+    bspc node -d {prev, next}
 
 super + Tab
 	bspc desktop -f last
