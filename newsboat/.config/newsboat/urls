@@ -21,6 +21,7 @@ http://lxer.com/module/newswire/headlines.rss "Linux-News"
 # https://www.fossmint.com/feed/ "Linux-News"
 https://itsfoss.com/feed/ "Linux-News"
 https://thenewstack.io/rss "Tech-News"`
+https://www.redhat.com/sysadmin/rss.xml "Linux-News"
 
 ---------------Reddit---------------
 https://www.reddit.com/r/selfhosted/.rss "~Reddit -- Self Hosted" "Hacking-Code"
@@ -31,12 +32,12 @@ https://www.reddit.com/r/linuxadmin/.rss "~Reddit -- LinuxAdmin" "Linux-News"
 https://www.reddit.com/r/linux/.rss "~Reddit -- Linux" "Linux-News"
 https://www.reddit.com/r/kubernetes/.rss "~Reddit -- Kubernetes" "Linux-News"
 https://www.reddit.com/r/docker/.rss "~Reddit -- Docker" "Linux-News"
-https://www.reddit.com/r/golang/.rss "~Reddit -- Golang" "Linux-News"
+# https://www.reddit.com/r/golang/.rss "~Reddit -- Golang" "Linux-News"
 https://www.reddit.com/r/technology/.rss "~Reddit -- Technology" "Tech-News"
 
 https://www.reddit.com/r/soccer/.rss "~Reddit -- Soccer" "sport"
 https://www.reddit.com/r/juve/.rss "~Reddit -- Juventus" "sport"
-https://mail-archives.apache.org/mod_mbox/guacamole-user/?format=atom "~Guacamole Mail list"
+# https://mail-archives.apache.org/mod_mbox/guacamole-user/?format=atom "~Guacamole Mail list"
 ---------------Youtube---------------
 # Youtube
 
@@ -50,12 +51,13 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCzNcnIeuGLXR4uAsJ6cP3kw "~Y
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHr_zjenUjU7G1NXegSMHPg "~Youtube -- Marouane Lamharzi" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMPBiSwYY4fS1LYw4KkDZuw "~Youtube -- Mustapha Swinga" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCQ9azoLKt090h4ZSyUGHh-w "~Youtube -- Youssef Halim" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCVlqGg1WZjfwz5JPJ5cPF9g "~Youtube -- Tajriba" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC07e1ZK4KWoDWnCN-z6VUiA "~Youtube -- Espitalia" "fun"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCVlqGg1WZjfwz5JPJ5cPF9g "~Youtube -- Tajriba" "fun"
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCWQhT_gni7EIKEpfd5tEGtQ "~Youtube -- Zoz Vlogs" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXPUbf7aTmoIXFpsqdmaJ3w "~Youtube -- KOULCHI" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCJCVxCW1dzEvFnzqDUU498g "~Youtube -- BIMO" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCyC--DJFW8PByGVIfvisACA "~Youtube -- Raw Soueelt" "fun"
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCBJeMCIeLQos7wacox4hmLQ "~Youtube -- Serie A" "sport"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCTv-XvfzLX3i4IGWAm4sbmA "~Youtube -- La Liga" "sport"
