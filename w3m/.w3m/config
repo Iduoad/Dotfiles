@@ -8,7 +8,7 @@ graphic_char        1
 display_link_number 1
 display_image       0
 
-extbrowser firefox
+extbrowser urlportal
 
 mime_types ~/.mime.types, /etc/mime.types
 
