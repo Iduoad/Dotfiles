@@ -1,4 +1,4 @@
-auto-reload yes
+
 confirm-exit yes
 keep-articles-days 180
 reload-threads 5
@@ -30,7 +30,7 @@ macro y set browser "spawndl"; open-in-browser ; set browser urlportal
 macro w set browser "i3 exec $BROWSER"; open-in-browser ; set browser urlportal
 # c copies the link to the clipboard.
 # The line below is probably the skiddiest line I've ever written.
-macro c set browser "copy(){ echo $1 | xclip -selection clipboard ;}; copy "; open-in-browser ; set browser urlportal
+# macro c set browser "copy(){ echo $1 | xclip -selection clipboard ;}; copy "; open-in-browser ; set browser urlportal
 
 
 highlight article     "(^Feed:.*|^Title:.*|^Author:.*)"     color75  default

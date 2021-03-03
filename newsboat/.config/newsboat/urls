@@ -10,7 +10,7 @@ https://www.sudosatirical.com/articles/index.xml
 
 ---------------News---------------
 # Blogs
-http://feeds.reuters.com/Reuters/worldNews "World-News"
+https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best "World-News"
 https://www.moroccoworldnews.com/rss "World-News"
 https://news.ycombinator.com/rss "Tech-News"
 
@@ -19,6 +19,7 @@ https://www.phoronix.com/rss.php "Linux-News"
 https://lwn.net/headlines/rss "Linux-News"
 http://lxer.com/module/newswire/headlines.rss "Linux-News"
 # https://www.fossmint.com/feed/ "Linux-News"
+https://blog.nativecloud.dev/rss/ "Linux-news"
 https://itsfoss.com/feed/ "Linux-News"
 https://thenewstack.io/rss "Tech-News"`
 https://www.redhat.com/sysadmin/rss.xml "Linux-News"
@@ -34,6 +35,7 @@ https://www.reddit.com/r/kubernetes/.rss "~Reddit -- Kubernetes" "Linux-News"
 https://www.reddit.com/r/docker/.rss "~Reddit -- Docker" "Linux-News"
 # https://www.reddit.com/r/golang/.rss "~Reddit -- Golang" "Linux-News"
 https://www.reddit.com/r/technology/.rss "~Reddit -- Technology" "Tech-News"
+https://stackexchange.com/feeds/tagsets/399798/community?sort=newest
 
 https://www.reddit.com/r/soccer/.rss "~Reddit -- Soccer" "sport"
 https://www.reddit.com/r/juve/.rss "~Reddit -- Juventus" "sport"
@@ -43,21 +45,25 @@ https://www.reddit.com/r/juve/.rss "~Reddit -- Juventus" "sport"
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCSAUGyc_xA8uYzaIVG6MESQ "~Youtube -- nigahiga" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCqa2MPu8bLY1PwVFUpSyVhQ "~Youtube -- Hiho Kids" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJjSDX-jUChzOEyok9XYRJQ "~Youtube -- Jubilee" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCbaGn5VkOVlcRgIWAHcrJKA "~Youtube -- watchcut" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCdC0An4ZPNr_YiFiYoVbwaw "~Youtube -- Daily Dose of Internet" "fun"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCJjSDX-jUChzOEyok9XYRJQ "~Youtube -- Jubilee" "fun"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCbaGn5VkOVlcRgIWAHcrJKA "~Youtube -- watchcut" "fun"
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCzNcnIeuGLXR4uAsJ6cP3kw "~Youtube -- Najib Mokhtari" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCrbWBDmNrdtNU5eKr8RLFng "~Youtube -- Othmane Safsafi" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCHr_zjenUjU7G1NXegSMHPg "~Youtube -- Marouane Lamharzi" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMPBiSwYY4fS1LYw4KkDZuw "~Youtube -- Mustapha Swinga" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9JyBC7MshDg1uTyhm3UX3g "~Youtube -- Aji Tfham" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCQ9azoLKt090h4ZSyUGHh-w "~Youtube -- Youssef Halim" "fun"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC07e1ZK4KWoDWnCN-z6VUiA "~Youtube -- Espitalia" "fun"
-# https://www.youtube.com/feeds/videos.xml?channel_id=UCVlqGg1WZjfwz5JPJ5cPF9g "~Youtube -- Tajriba" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCSb8TLH_r_jl-Tl3KkYvVUg "~Youtube -- Balon" "fun"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCN6V1qJ38Iym7vVtRTWN3SQ "~Youtube -- Mido Chat Kora" "fun"
 
-https://www.youtube.com/feeds/videos.xml?channel_id=UCWQhT_gni7EIKEpfd5tEGtQ "~Youtube -- Zoz Vlogs" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCXPUbf7aTmoIXFpsqdmaJ3w "~Youtube -- KOULCHI" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJCVxCW1dzEvFnzqDUU498g "~Youtube -- BIMO" "fun"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCyC--DJFW8PByGVIfvisACA "~Youtube -- Raw Soueelt" "fun"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCWQhT_gni7EIKEpfd5tEGtQ "~Youtube -- Zoz Vlogs" "fun"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCvxt_KdYQRbQJJr-VIr8mlQ "~Youtube -- VodkaFunky TV" "fun"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCN6V1qJ38Iym7vVtRTWN3SQ "~Youtube -- Mido Chat Kora" "fun"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCXPUbf7aTmoIXFpsqdmaJ3w "~Youtube -- KOULCHI" "fun"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCJCVxCW1dzEvFnzqDUU498g "~Youtube -- BIMO" "fun"
 
 https://www.youtube.com/feeds/videos.xml?channel_id=UCBJeMCIeLQos7wacox4hmLQ "~Youtube -- Serie A" "sport"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCTv-XvfzLX3i4IGWAm4sbmA "~Youtube -- La Liga" "sport"
@@ -66,9 +72,11 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCTv-XvfzLX3i4IGWAm4sbmA "~Y
 https://feeds.feedburner.com/DailyTechHeadlines "~Podcast -- DailyTechHeadlines" "Linux-Podcasts"
 https://feeds.fireside.fm/linuxheadlines/rss "~Podcast -- Linux Headlines" "Linux-Podcasts"
 http://feeds.soundcloud.com/users/soundcloud:users:107605642/sounds.rss "~Podcast -- The Newstackmakers"
+https://feeds.buzzsprout.com/1012450.rss "~Podcast -- The Art of Modern Ops"
+https://sudo.show/rss "~Podcast -- Sudo Show" "Linux-Podcasts"
 
-https://www.youtube.com/feeds/videos.xml?channel_id=UCNbqa_9xihC8yaV2o6dlsUg "~Podcast -- Security Now" "Linux-Podcasts"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCagoIYmo_gO1iVaCeeSikEg "~Podcast -- This Week In Tech" "Linux-Podcasts"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCNbqa_9xihC8yaV2o6dlsUg "~Podcast -- Security Now" "Linux-Podcasts"
+# https://www.youtube.com/feeds/videos.xml?channel_id=UCagoIYmo_gO1iVaCeeSikEg "~Podcast -- This Week In Tech" "Linux-Podcasts"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCmyGZ0689ODyReHw3rsKLtQ "~Podcast -- TuxDigital" "Linux-Podcasts"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCWJUSpXVHTaHErtGWC5qPlQ "~Podcast -- Destination Linux" "Linux-Podcasts"
 
@@ -80,7 +88,9 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCVRJ6D343dX-x730MRP8tNw "~Y
 https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~Youtube -- gotbletu" "Linux-Videos"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Youtube -- Luke Smith" "Linux-Videos"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "~Youtube -- DistroTube" "Linux-Videos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC_ML5xP23TOWKUcc-oAE_Eg "~Youtube -- Hussein Nasser" "tech"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "~Youtube -- Brodie Robertson" "Linux-Videos"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHugE6eRhqB9_AZQh4DDbIw "~Youtube -- Jupiter broadcast" "Linux-Videos"
 # https://www.youtube.com/feeds/videos.xml?channel_id=UCjr2bPAyPV7t35MvcgT3W8Q "~Youtube -- The Hated one" "Linux-Videos"
 # https://www.youtube.com/feeds/videos.xml?channel_id=UCxQKHvKbmSzGMvUrVtJYnUA "~Youtube -- LearnLinuxTV" "Linux-Videos"
 
