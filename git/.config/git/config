@@ -1,5 +1,6 @@
 [user]
 	email = m.iduoad@gmail.com
 	name = Mohammed Daoudi
+	signingkey = C0B7D3A536AFA49F4E503B540EAC9DA6A44F0503
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
