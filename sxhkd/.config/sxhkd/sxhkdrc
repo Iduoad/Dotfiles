@@ -3,7 +3,7 @@ super + shift + Escape
     bspc quit
 
 super + shift + r
-    wm -r
+    bspc wm -r
 
 super + q
     xdo close
