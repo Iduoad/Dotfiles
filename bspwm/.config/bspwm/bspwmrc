@@ -56,4 +56,4 @@ bspc rule -a Zathura state=tiled
 bspc rule -a firefox:Toolkit sticky=on state=floating
 
 ###---Programs---###
-$HOME/.config/polybar/launch.sh
+$HOME/.config/polybar/launch.sh &
