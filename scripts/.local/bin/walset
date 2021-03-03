@@ -7,7 +7,7 @@ browser_colors() {
 }
 
 zathura_colors() {
-    zsh $HOME/.config/Scripts/zathcolors.sh > $HOME/.config/zathura/zathurarc
+    zsh $HOME/.local/bin/zathcolors.sh > $HOME/.config/zathura/zathurarc
 }
 
 [ $# -gt 4 ] && usage
@@ -41,4 +41,5 @@ else
     [[ $ligh_theme == true ]] && wal --theme random_light || wal --theme random
 fi
 
+zathura_colors
 browser_colors

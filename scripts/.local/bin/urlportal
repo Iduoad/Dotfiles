@@ -77,10 +77,10 @@ shopt -s nocasematch
 echo "$1"
 url="$1"
 case "$url" in
-    *gfycat.com/*|*streamable.com/*)
+    *gfycat.com/*)
         nohup $VIDEO_CLIP "${url/.gifv/.webm}" > /dev/null 2>&1 &
         ;;
-    *streamvi.com/*|*streamja.com/*|*sporttube.com/*|*streamable.com/|*clippituser.tv/*)
+    *streamvi.com/*|*streamja.com/*|*sporttube.com/*|*streamable.com/*|*clippituser.tv/*|*streamye.com/*)
         $VIDEO_QUEUE "$url"
         ;;
     *v.redd.it/*|*video.twimg.com/*|*dailymotion.com*)
@@ -221,7 +221,7 @@ case "$url" in
     *.mp4|*.mkv|*.avi|*.wmv|*.m4v|*.mpg|*.mpeg|*.flv|*.ogm|*.ogv|*.gifv)
         $VIDEO_QUEUE "$url"
         ;;
-    *.mp3|*.m4a|*.wav|*.ogg|*.oga|*.flac|*soundcloud.com/*|*DailyTechHeadlines*|*linuxheadlines.show/*)
+    *.mp3|*.m4a|*.wav|*.ogg|*.oga|*.flac|*soundcloud.com/*|*DailyTechHeadlines*|*linuxheadlines.show/*|*buzzsprout.com/*)
         # create queue fifo files if it does not exist
         if [[ ! -p /tmp/mpvinput ]]; then
             mkfifo /tmp/mpvinput
@@ -243,7 +243,8 @@ case "$url" in
         ;;
     *|*.html)
         # $DEFAULT "$url"
-        tmux new-window -n browse && tmux send-keys "$DEFAULT '$url' && tmux kill-pane" 'Enter'
+        # tmux new-window -n browse && tmux send-keys "$DEFAULT '$url' && tmux kill-pane" 'Enter'
+        tmux new-window -n browse && tmux send-keys "readability '$url' | /usr/bin/w3m -T text/html && tmux kill-pane" 'Enter'
         ;;
 esac
 

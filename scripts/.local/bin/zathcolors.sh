@@ -33,5 +33,7 @@ set render-loading-fg "$foreground"
 set smooth-scroll true
 set window-title-home-tilde true
 set statusbar-basename true
+
 set selection-clipboard clipboard
+map <C-o> feedkeys ":exec zathura-annotate $FILE<Return>"
 CONF
