@@ -2,6 +2,7 @@
 
 ### Generic programs shortcuts: ###
 alias a="calcurse -a -t"
+alias shop='calcurse -C "$XDG_CONFIG_HOME"/calcurse -D "$XDG_DATA_HOME"/calcurse/shop'
 # alias email="thunderbird -ProfileManager"
 alias email="neomutt"
 alias nf="clear && neofetch"

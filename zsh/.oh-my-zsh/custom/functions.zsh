@@ -1,7 +1,7 @@
 #!/zsh/sh
 
 #extract
-extract () {
+function extract () {
     if [ -f $1 ] ; then
       case $1 in
         *.tar.bz2)   tar xjf $1     ;;
@@ -22,34 +22,34 @@ extract () {
      fi
 }
 
-def () {
+function def () {
     if [ -n $1 ] ; then
         sdcv $1 | less
     fi
 }
 
-record () {
+function record () {
     ffmpeg -video_size 1600x900 -framerate 25 -f x11grab -i :0 output.mp4
 }
 
-ddownload() {
+function ddownload() {
     [ -n $1 ] && wget "http://media.readthedocs.org/pdf/$1/latest/$1.pdf"
 }
 
-generate_structure(){
+function generate_structure(){
     if [ -n $1 ]; then
         mkdir $1 tests bin docs
         touch "${1}/__init__.py" "tests/${1}/__init.py__"
     fi
 }
 
-count() {
+function count() {
   total=$1
   for ((i=total; i>0; i--)); do sleep 1; printf "Time remaining $i secs \r"; done
   echo -e "\a"
 }
 
-se () {
+function se () {
     case "$1" in
         s)
             dir="$HOME/dotfiles/"
@@ -84,3 +84,6 @@ function subtitler() {
     rm $filename
 }
 
+function gpp() {
+    git push || git push --set-upstream origin $(git branch --show-current)
+}

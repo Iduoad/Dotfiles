@@ -105,3 +105,5 @@ export LC_ALL=en_US.UTF-8
 # eval $(keychain --eval --agents gpg,ssh --quiet)
 # To add support for TTYs this line can be optionally added.
 # source ~/.cache/wal/colors-tty.sh
+
+source $XDG_DATA_HOME/private/vpn.sh

@@ -43,6 +43,9 @@ export ncmpcpp_directory='$HOME/.config/ncmpcpp'
 export STARDICT_DATA_DIR="$XDG_DATA_HOME/stardict"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME"/pass
 
+# RTV
+export RTV_BROWSER='urlportal'
+
 # default programs
 export BROWSER='firefox'
 export EDITOR='nvim'
