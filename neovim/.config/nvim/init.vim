@@ -4,7 +4,6 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 " Plug 'posva/vim-vue'
 Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'tomtom/tcomment_vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plugin 'nathanaelkane/vim-indent-guides' "Add visual indicators if indent
 " Theming
 Plug 'dylanaraps/wal.vim'
