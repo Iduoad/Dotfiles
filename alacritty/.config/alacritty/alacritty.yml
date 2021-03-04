@@ -16,15 +16,15 @@ dimensions:
     lines: 24
 font:
   normal:
-    family: Fira Code
+    family: Source Code Pro
     style: Italic
   bold:
-    family: Fira Code
+    family: Source Code Pro
     style: Bold
   italic:
-    family: Fira Code
+    family: Source Code Pro
     style: Light Italic
-  size: 6.5
+  size: 8
   scale_with_dpi: true
   use_thin_strokes: true
 debug.render_timer: false
